@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Vite" />
+        <module name="Asteroid-Mining" />
       </profile>
     </annotationProcessing>
   </component>
