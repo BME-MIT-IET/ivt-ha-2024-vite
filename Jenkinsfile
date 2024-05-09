@@ -7,6 +7,8 @@ pipeline {
                 // Clone the Git repository and build the project
                 git branch: 'main', url: 'https://github.com/BME-MIT-IET/ivt-ha-2024-vite'
                 bat "mvn -Dmaven.test.failure.ignore=true clean package"
+
+                //testing if webhook is working
             }
         }
         stage('Test') {
