@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c59b9d44-2dc1-4ebd-bb6a-45904f5bf5e2" name="Changes" comment="workspace.xml removed">
+      <change afterPath="$PROJECT_DIR$/src/test/java/AsteroidMiningTests/SunStormTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Asteroid-Mining-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/Asteroid-Mining-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cpd.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/cpd.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pmd.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/pmd.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +70,7 @@
     "Maven.Asteroid-Mining [clean,install].executor": "Run",
     "Maven.Asteroid-Mining [exec:java].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Code-Coverage-Measurement",
+    "git-widget-placeholder": "JUnit-Tests-2",
     "kotlin-language-version-configured": "true",
     "last_directory_selection": "D:/ivt_/ivt-ha-2024-vite/src/test/java",
     "last_opened_file_path": "D:/ivt_/ivt-ha-2024-vite/src/test/java/AsteroidMiningTests",
@@ -132,6 +128,7 @@
       <workItem from="1715285595421" duration="1571000" />
       <workItem from="1715300715969" duration="434000" />
       <workItem from="1715367086621" duration="1233000" />
+      <workItem from="1715372473236" duration="105000" />
     </task>
     <task id="LOCAL-00001" summary="maven framework build added">
       <option name="closed" value="true" />
