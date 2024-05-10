@@ -28,20 +28,20 @@ public class SpaceShip extends GameObject{
     @Override
     public void tick() {
 
-<span class="nc" id="L31">    }</span>
+<span class="fc" id="L31">    }</span>
 
     @Override
     public void render(Graphics g) throws IOException {
-<span class="nc" id="L35">        int i = 0;</span>
-<span class="nc" id="L36">        g.setColor(Color.YELLOW);</span>
-<span class="nc" id="L37">        g.drawLine(70, 670, 500, 670);</span>
+<span class="fc" id="L35">        int i = 0;</span>
+<span class="fc" id="L36">        g.setColor(Color.YELLOW);</span>
+<span class="fc" id="L37">        g.drawLine(70, 670, 500, 670);</span>
 
-<span class="nc" id="L39">        g.drawImage(img, 30, 630, 30,30, null);</span>
-<span class="nc bnc" id="L40" title="All 2 branches missed.">        for(Resource r: resources.keySet()){</span>
+<span class="fc" id="L39">        g.drawImage(img, 30, 630, 30,30, null);</span>
+<span class="pc bpc" id="L40" title="1 of 2 branches missed.">        for(Resource r: resources.keySet()){</span>
 <span class="nc" id="L41">            g.drawImage(r.getImg(), 70+i, 630, 30,30, null);</span>
 <span class="nc" id="L42">            i+=45;</span>
 <span class="nc" id="L43">        }</span>
-<span class="nc" id="L44">    }</span>
+<span class="fc" id="L44">    }</span>
 
     /*adding resource to the inventory*/
     public boolean addResource(Resource r){

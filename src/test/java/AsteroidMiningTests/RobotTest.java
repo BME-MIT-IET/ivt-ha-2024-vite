@@ -3,9 +3,12 @@ package AsteroidMiningTests;
 import AsteroidMining.Asteroid;
 import AsteroidMining.Carbon;
 import AsteroidMining.Robot;
+
+import static org.mockito.Mockito.*;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
+import org.mockito.Mockito;
 
 public class RobotTest {
 
@@ -54,5 +57,25 @@ public class RobotTest {
         int health = r.getHealth();
         r.getDamage(2);
         Assertions.assertEquals(health-2, r.getHealth());
+    }
+    @Test
+    public void testRobotHealthDecrease() {
+        r.getDamage(5);
+        Assertions.assertEquals(-5, r.getHealth(), "Health should decrease by the amount of damage received");
+    }
+
+    @Test
+    public void testRobotDeath() {
+        r.getDamage(100);
+        Assertions.assertTrue(r.getHealth() <= 0, "Robot should be dead or inactive when health is zero or negative");
+    }
+
+    @Test
+    public void testTickNoActionWhenDead() {
+        r.getDamage(100); // Assuming this makes the robot inactive or dead
+        Robot spyRobot = Mockito.spy(r);
+        spyRobot.tick();
+        Mockito.verify(spyRobot, Mockito.never()).travel();
+        Mockito.verify(spyRobot, Mockito.never()).drill();
     }
 }

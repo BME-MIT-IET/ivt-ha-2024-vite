@@ -3,30 +3,30 @@ import javax.swing.*;
 import java.awt.*;
 
 public class Window extends Canvas {
-<span class="nc" id="L6">    protected static final String game = null;</span>
+<span class="fc" id="L6">    protected static final String game = null;</span>
     protected static JFrame frame;
 
-<span class="nc" id="L9">    public Window(int width, int height, String title, Game game){</span>
-<span class="nc" id="L10">        frame = new JFrame(title);</span>
-<span class="nc" id="L11">        setFrame(frame,width, height);</span>
+<span class="fc" id="L9">    public Window(int width, int height, String title, Game game){</span>
+<span class="fc" id="L10">        frame = new JFrame(title);</span>
+<span class="fc" id="L11">        setFrame(frame,width, height);</span>
 
-<span class="nc" id="L13">        frame.add(game);</span>
-<span class="nc" id="L14">        frame.setVisible(true);</span>
-<span class="nc" id="L15">        frame.setFocusable(true);</span>
-<span class="nc" id="L16">        game.start();</span>
+<span class="fc" id="L13">        frame.add(game);</span>
+<span class="fc" id="L14">        frame.setVisible(true);</span>
+<span class="fc" id="L15">        frame.setFocusable(true);</span>
+<span class="fc" id="L16">        game.start();</span>
 
-<span class="nc" id="L18">    }</span>
+<span class="fc" id="L18">    }</span>
 
 
     public void setFrame(JFrame frame, int width, int height) {
-<span class="nc" id="L22">        frame.setPreferredSize(new Dimension(width, height));</span>
-<span class="nc" id="L23">        frame.setMaximumSize(new Dimension(width, height));</span>
-<span class="nc" id="L24">        frame.setMinimumSize(new Dimension(width, height));</span>
+<span class="fc" id="L22">        frame.setPreferredSize(new Dimension(width, height));</span>
+<span class="fc" id="L23">        frame.setMaximumSize(new Dimension(width, height));</span>
+<span class="fc" id="L24">        frame.setMinimumSize(new Dimension(width, height));</span>
 
-<span class="nc" id="L26">        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);</span>
-<span class="nc" id="L27">        frame.setResizable(false);</span>
-<span class="nc" id="L28">        frame.setLocationRelativeTo(null);</span>
-<span class="nc" id="L29">    }</span>
+<span class="fc" id="L26">        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);</span>
+<span class="fc" id="L27">        frame.setResizable(false);</span>
+<span class="fc" id="L28">        frame.setLocationRelativeTo(null);</span>
+<span class="fc" id="L29">    }</span>
 
 
 }

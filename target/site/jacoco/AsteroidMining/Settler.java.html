@@ -36,46 +36,46 @@ public class Settler extends Visitor {
 
     @Override
     public void tick() {
-<span class="nc bnc" id="L39" title="All 2 branches missed.">        if(checkCollision()){</span>
+<span class="fc bfc" id="L39" title="All 2 branches covered.">        if(checkCollision()){</span>
 
-<span class="nc bnc" id="L41" title="All 2 branches missed.">            if(!getPlace().getBounds().contains(new Point(x = x + velX*2,y = y + velY*2))){</span>
-<span class="nc" id="L42">                x = x - velX;</span>
-<span class="nc" id="L43">                y = y - velY*2;</span>
+<span class="fc bfc" id="L41" title="All 2 branches covered.">            if(!getPlace().getBounds().contains(new Point(x = x + velX*2,y = y + velY*2))){</span>
+<span class="fc" id="L42">                x = x - velX;</span>
+<span class="fc" id="L43">                y = y - velY*2;</span>
             }
 
 
         }
-<span class="nc bnc" id="L48" title="All 2 branches missed.">        else if(!checkCollision()){</span>
-<span class="nc" id="L49">            hidden = false;</span>
-<span class="nc" id="L50">            x = x + velX;</span>
-<span class="nc" id="L51">            y = y + velY;</span>
-<span class="nc" id="L52">            this.setPlace(null);</span>
-<span class="nc" id="L53">            nexDestX = x;</span>
-<span class="nc" id="L54">            nextDestY=y;</span>
+<span class="pc bpc" id="L48" title="1 of 2 branches missed.">        else if(!checkCollision()){</span>
+<span class="fc" id="L49">            hidden = false;</span>
+<span class="fc" id="L50">            x = x + velX;</span>
+<span class="fc" id="L51">            y = y + velY;</span>
+<span class="fc" id="L52">            this.setPlace(null);</span>
+<span class="fc" id="L53">            nexDestX = x;</span>
+<span class="fc" id="L54">            nextDestY=y;</span>
         }
 
-<span class="nc" id="L57">    }</span>
+<span class="fc" id="L57">    }</span>
     public boolean checkCollision(){
-<span class="nc" id="L59">        Rectangle rec1 = this.getBounds();</span>
-<span class="nc bnc" id="L60" title="All 2 branches missed.">        for(Place p1: handler.neighbours){</span>
-<span class="nc bnc" id="L61" title="All 2 branches missed.">            if(rec1.intersects(p1.getBounds())){</span>
-<span class="nc" id="L62">                this.setPlace(p1);</span>
-<span class="nc" id="L63">                return true;</span>
+<span class="fc" id="L59">        Rectangle rec1 = this.getBounds();</span>
+<span class="fc bfc" id="L60" title="All 2 branches covered.">        for(Place p1: handler.neighbours){</span>
+<span class="fc bfc" id="L61" title="All 2 branches covered.">            if(rec1.intersects(p1.getBounds())){</span>
+<span class="fc" id="L62">                this.setPlace(p1);</span>
+<span class="fc" id="L63">                return true;</span>
             }
-<span class="nc" id="L65">        }</span>
-<span class="nc" id="L66">        return false;</span>
+<span class="fc" id="L65">        }</span>
+<span class="fc" id="L66">        return false;</span>
     }
 
     @Override
     public void render(Graphics g) throws IOException {
-<span class="nc" id="L71">        g.drawImage(img, x, y, width, height, null);</span>
-<span class="nc bnc" id="L72" title="All 2 branches missed.">        if (this.isHidden() ){</span>
+<span class="fc" id="L71">        g.drawImage(img, x, y, width, height, null);</span>
+<span class="pc bpc" id="L72" title="1 of 2 branches missed.">        if (this.isHidden() ){</span>
 <span class="nc" id="L73">            img2 = ImageIO.read(new File(&quot;Assets/settler.png&quot;));</span>
 <span class="nc" id="L74">            Asteroid a1 = (Asteroid)getPlace();</span>
 <span class="nc" id="L75">            g.drawImage(img2, a1.coreX,  a1.coreY, 30, 30, null);</span>
         }
 
-<span class="nc" id="L78">    }</span>
+<span class="fc" id="L78">    }</span>
 
     /*Settler mining the available asteroid*/
     public boolean mine() {

@@ -5,9 +5,86 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c59b9d44-2dc1-4ebd-bb6a-45904f5bf5e2" name="Changes" comment="workspace.xml removed">
+      <change afterPath="$PROJECT_DIR$/src/test/java/AsteroidMiningTests/GameTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/AsteroidMiningTests/MenuTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AsteroidMiningTests/ResourceTest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AsteroidMining/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AsteroidMining/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AsteroidMining/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AsteroidMining/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AsteroidMiningTests/RobotTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AsteroidMiningTests/RobotTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AsteroidMining/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AsteroidMining/Game.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AsteroidMining/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AsteroidMining/Menu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jacoco.exec" beforeDir="false" afterPath="$PROJECT_DIR$/target/jacoco.exec" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/AsteroidMining.Resources/STATE.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/AsteroidMining.Resources/STATE.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/AsteroidMining.Resources/STATE.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/AsteroidMining.Resources/STATE.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/AsteroidMining.Resources/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/AsteroidMining.Resources/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/AsteroidMining.Resources/index.source.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/AsteroidMining.Resources/index.source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/AsteroidMining/Asteroid.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/AsteroidMining/Asteroid.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/AsteroidMining/Asteroid.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/AsteroidMining/Asteroid.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/AsteroidMining/Carbon.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/AsteroidMining/Carbon.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/AsteroidMining/Direction.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/AsteroidMining/Direction.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/AsteroidMining/Game.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/AsteroidMining/Game.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/AsteroidMining/Game.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/AsteroidMining/Game.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/AsteroidMining/GameObject.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/AsteroidMining/GameObject.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/AsteroidMining/GameObject.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/AsteroidMining/GameObject.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/AsteroidMining/Handler.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/AsteroidMining/Handler.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/AsteroidMining/Handler.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/AsteroidMining/Handler.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/AsteroidMining/ID.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/AsteroidMining/ID.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/AsteroidMining/Iron.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/AsteroidMining/Iron.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/AsteroidMining/KeyHandler.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/AsteroidMining/KeyHandler.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/AsteroidMining/KeyHandler.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/AsteroidMining/KeyHandler.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/AsteroidMining/Menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/AsteroidMining/Menu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/AsteroidMining/Menu.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/AsteroidMining/Menu.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/AsteroidMining/Place.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/AsteroidMining/Place.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/AsteroidMining/Place.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/AsteroidMining/Place.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/AsteroidMining/RadioActiveAsteroid.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/AsteroidMining/RadioActiveAsteroid.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/AsteroidMining/Resource.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/AsteroidMining/Resource.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/AsteroidMining/Robot.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/AsteroidMining/Robot.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/AsteroidMining/Robot.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/AsteroidMining/Robot.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/AsteroidMining/Settler.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/AsteroidMining/Settler.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/AsteroidMining/Settler.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/AsteroidMining/Settler.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/AsteroidMining/SpaceShip.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/AsteroidMining/SpaceShip.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/AsteroidMining/SpaceShip.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/AsteroidMining/SpaceShip.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/AsteroidMining/SunStorm.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/AsteroidMining/SunStorm.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/AsteroidMining/SunStorm.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/AsteroidMining/SunStorm.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/AsteroidMining/TeleportationGate.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/AsteroidMining/TeleportationGate.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/AsteroidMining/Uranium.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/AsteroidMining/Uranium.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/AsteroidMining/Visitor.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/AsteroidMining/Visitor.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/AsteroidMining/WaterIce.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/AsteroidMining/WaterIce.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/AsteroidMining/Window.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/AsteroidMining/Window.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/AsteroidMining/Window.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/AsteroidMining/Window.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/AsteroidMining/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/AsteroidMining/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/AsteroidMining/index.source.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/AsteroidMining/index.source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/prettify.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/prettify.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/prettify.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/prettify.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/report.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/report.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/sort.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/sort.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-sessions.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco-sessions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco.csv" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/AsteroidMiningTests.AsteroidTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/AsteroidMiningTests.AsteroidTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/AsteroidMiningTests.CarbonTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/AsteroidMiningTests.CarbonTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/AsteroidMiningTests.DirectionTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/AsteroidMiningTests.DirectionTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/AsteroidMiningTests.HandlerTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/AsteroidMiningTests.HandlerTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/AsteroidMiningTests.IDTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/AsteroidMiningTests.IDTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/AsteroidMiningTests.IronTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/AsteroidMiningTests.IronTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/AsteroidMiningTests.RadioActiveAsteroidTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/AsteroidMiningTests.RadioActiveAsteroidTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/AsteroidMiningTests.RobotTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/AsteroidMiningTests.RobotTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/AsteroidMiningTests.SettlerTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/AsteroidMiningTests.SettlerTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/AsteroidMiningTests.WaterIceTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/AsteroidMiningTests.WaterIceTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-AsteroidMiningTests.AsteroidTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-AsteroidMiningTests.AsteroidTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-AsteroidMiningTests.CarbonTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-AsteroidMiningTests.CarbonTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-AsteroidMiningTests.DirectionTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-AsteroidMiningTests.DirectionTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-AsteroidMiningTests.HandlerTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-AsteroidMiningTests.HandlerTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-AsteroidMiningTests.IDTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-AsteroidMiningTests.IDTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-AsteroidMiningTests.IronTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-AsteroidMiningTests.IronTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-AsteroidMiningTests.RadioActiveAsteroidTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-AsteroidMiningTests.RadioActiveAsteroidTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-AsteroidMiningTests.RobotTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-AsteroidMiningTests.RobotTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-AsteroidMiningTests.SettlerTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-AsteroidMiningTests.SettlerTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-AsteroidMiningTests.WaterIceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-AsteroidMiningTests.WaterIceTest.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,14 +141,18 @@
     "Application.Unnamed.executor": "Run",
     "JUnit.CarbonTest.executor": "Run",
     "JUnit.DirectionTest.executor": "Run",
+    "JUnit.GameTest.executor": "Run",
     "JUnit.IDTest.executor": "Run",
     "JUnit.IronTest.executor": "Run",
+    "JUnit.KeyHandlerTest.executor": "Run",
+    "JUnit.MenuTest.executor": "Run",
     "JUnit.RadioActiveAsteroidTest.executor": "Run",
+    "JUnit.RobotTest.executor": "Run",
     "JUnit.WaterIceTest.executor": "Run",
     "Maven.Asteroid-Mining [clean,install].executor": "Run",
     "Maven.Asteroid-Mining [exec:java].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Code-Coverage-Measurement-2",
+    "git-widget-placeholder": "JUnit-Tests-3",
     "kotlin-language-version-configured": "true",
     "last_directory_selection": "D:/ivt_/ivt-ha-2024-vite/src/test/java",
     "last_opened_file_path": "C:/Users/ruvej/Desktop/4th BSc Year/8th Semester/Integration and Verification Techniques/HOMEWORK/ivt-ha-2024-vite",
@@ -131,6 +212,7 @@
       <workItem from="1715367086621" duration="1233000" />
       <workItem from="1715372473236" duration="105000" />
       <workItem from="1715373928518" duration="46000" />
+      <workItem from="1715374592754" duration="2267000" />
     </task>
     <task id="LOCAL-00001" summary="maven framework build added">
       <option name="closed" value="true" />

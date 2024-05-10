@@ -1,10 +1,10 @@
 AsteroidMiningTests\RadioActiveAsteroidTest.class
+AsteroidMiningTests\IDTest.class
+AsteroidMiningTests\CarbonTest.class
+AsteroidMiningTests\DirectionTest.class
 AsteroidMiningTests\SettlerTest.class
 AsteroidMiningTests\IronTest.class
-AsteroidMiningTests\IDTest.class
 AsteroidMiningTests\RobotTest.class
 AsteroidMiningTests\AsteroidTest.class
 AsteroidMiningTests\HandlerTest.class
-AsteroidMiningTests\CarbonTest.class
-AsteroidMiningTests\DirectionTest.class
 AsteroidMiningTests\WaterIceTest.class
