@@ -44,9 +44,15 @@ public class RobotTest {
         Assertions.assertTrue(r.drill());
     }
 
-
     @Test
     public void testDrillWithNoAsteroid() {
         Assertions.assertFalse(r.drill());
+    }
+
+    @Test
+    public void testGetDamage(){
+        int health = r.getHealth();
+        r.getDamage(2);
+        Assertions.assertEquals(health-2, r.getHealth());
     }
 }

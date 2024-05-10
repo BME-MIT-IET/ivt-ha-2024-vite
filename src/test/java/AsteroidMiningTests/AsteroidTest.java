@@ -16,11 +16,8 @@ class AsteroidTest {
 
     @Test
     void deepenHoleTest() {
-
         asteroid.deepenHole(5);
-
-        //TODO: getDepth() getter is missing
-        //assertEquals(5, asteroid.GetDepth());
+       Assertions.assertEquals(5, asteroid.getDepth());
     }
 
     @Test

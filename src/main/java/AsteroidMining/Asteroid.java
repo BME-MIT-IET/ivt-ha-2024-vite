@@ -120,6 +120,9 @@ public class Asteroid extends Place {
     public boolean isHollow(){
         return hollow;
     }
+    public int getDepth(){
+        return this.depth;
+    }
 
     public boolean isPerihelion(){
         return _isPerihelion;
