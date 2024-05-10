@@ -1,5 +1,7 @@
+
 package AsteroidMiningTests;
 
+import AsteroidMining.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -27,7 +29,8 @@ class AsteroidTest {
 
     @Test
     void addResourceTest(){
-        Resource iron = new Iron();
+        Resource iron;
+        iron = new Iron();
 
         asteroid.addResource(iron);
 

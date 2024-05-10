@@ -1,5 +1,6 @@
 package AsteroidMiningTests;
 
+import AsteroidMining.*;
 import org.junit.jupiter.api.Test;
 
 import java.util.LinkedList;
