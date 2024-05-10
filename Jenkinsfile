@@ -6,16 +6,14 @@ pipeline {
             steps {
                 // Clone the Git repository and build the project
                 git branch: 'main', url: 'https://github.com/BME-MIT-IET/ivt-ha-2024-vite'
-                bat "mvn -Dmaven.test.failure.ignore=true clean package"
             }
         }
         stage('Test') {
             steps {
-                // Run unit tests
+                
                 bat "mvn test"
-
-                // Capture test results
-                //junit '**/target/surefire-reports/TEST-*.xml'
+                // Generate Surefire test reports
+                bat "mvn surefire-report:report"
             }
         }
     }
@@ -29,6 +27,10 @@ pipeline {
             // If any unit test fails, print an error message and fail the build
             echo 'Unit tests failed!'
             error 'Unit tests failed!'
+        }
+        always {
+            // Capture XML test report files using the JUnit plugin
+            junit '**/target/surefire-reports/TEST-*.xml'
         }
     }
 }
