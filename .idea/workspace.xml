@@ -135,39 +135,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.App.executor": "Run",
-    "Application.Unnamed.executor": "Run",
-    "JUnit.CarbonTest.executor": "Run",
-    "JUnit.DirectionTest.executor": "Run",
-    "JUnit.GameTest.executor": "Run",
-    "JUnit.IDTest.executor": "Run",
-    "JUnit.IronTest.executor": "Run",
-    "JUnit.KeyHandlerTest.executor": "Run",
-    "JUnit.MenuTest.executor": "Run",
-    "JUnit.RadioActiveAsteroidTest.executor": "Run",
-    "JUnit.RobotTest.executor": "Run",
-    "JUnit.WaterIceTest.executor": "Run",
-    "Maven.Asteroid-Mining [clean,install].executor": "Run",
-    "Maven.Asteroid-Mining [exec:java].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "JUnit-Tests-3",
-    "kotlin-language-version-configured": "true",
-    "last_directory_selection": "D:/ivt_/ivt-ha-2024-vite/src/test/java",
-    "last_opened_file_path": "C:/Users/ruvej/Desktop/4th BSc Year/8th Semester/Integration and Verification Techniques/HOMEWORK/ivt-ha-2024-vite",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15429688",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.App.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Unnamed.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CarbonTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DirectionTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.GameTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.IDTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.IronTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.KeyHandlerTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MenuTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RadioActiveAsteroidTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RobotTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.WaterIceTest.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Asteroid-Mining [clean,install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Asteroid-Mining [exec:java].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;JUnit-Tests-3&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;D:/ivt_/ivt-ha-2024-vite/src/test/java&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ruvej/Desktop/4th BSc Year/8th Semester/Integration and Verification Techniques/HOMEWORK/ivt-ha-2024-vite&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15429688&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\ivt_\ivt-ha-2024-vite\src\test\java\AsteroidMiningTests" />
