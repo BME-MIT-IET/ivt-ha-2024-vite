@@ -1,5 +1,0 @@
-# Created at 2024-05-10T14:36:00.279
-Boot Manifest-JAR contains absolute paths in classpath 'D:\ivt_\ivt-ha-2024-vite\target\test-classes'
-Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
-'other' has different root
-

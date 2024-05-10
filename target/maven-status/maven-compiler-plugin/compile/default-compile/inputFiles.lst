@@ -1,23 +1,23 @@
-D:\ivt_\ivt-ha-2024-vite\src\main\java\AsteroidMining\Robot.java
-D:\ivt_\ivt-ha-2024-vite\src\main\java\AsteroidMining\Settler.java
-D:\ivt_\ivt-ha-2024-vite\src\main\java\AsteroidMining\TeleportationGate.java
-D:\ivt_\ivt-ha-2024-vite\src\main\java\AsteroidMining\Direction.java
-D:\ivt_\ivt-ha-2024-vite\src\main\java\AsteroidMining\SunStorm.java
-D:\ivt_\ivt-ha-2024-vite\src\main\java\AsteroidMining\Window.java
-D:\ivt_\ivt-ha-2024-vite\src\main\java\AsteroidMining\Asteroid.java
-D:\ivt_\ivt-ha-2024-vite\src\main\java\AsteroidMining\GameObject.java
-D:\ivt_\ivt-ha-2024-vite\src\main\java\AsteroidMining\Menu.java
-D:\ivt_\ivt-ha-2024-vite\src\main\java\AsteroidMining\Resources\STATE.java
-D:\ivt_\ivt-ha-2024-vite\src\main\java\AsteroidMining\KeyHandler.java
-D:\ivt_\ivt-ha-2024-vite\src\main\java\AsteroidMining\Visitor.java
-D:\ivt_\ivt-ha-2024-vite\src\main\java\AsteroidMining\WaterIce.java
-D:\ivt_\ivt-ha-2024-vite\src\main\java\AsteroidMining\Iron.java
-D:\ivt_\ivt-ha-2024-vite\src\main\java\AsteroidMining\Handler.java
-D:\ivt_\ivt-ha-2024-vite\src\main\java\AsteroidMining\Carbon.java
-D:\ivt_\ivt-ha-2024-vite\src\main\java\AsteroidMining\SpaceShip.java
-D:\ivt_\ivt-ha-2024-vite\src\main\java\AsteroidMining\Uranium.java
-D:\ivt_\ivt-ha-2024-vite\src\main\java\AsteroidMining\Game.java
-D:\ivt_\ivt-ha-2024-vite\src\main\java\AsteroidMining\Place.java
-D:\ivt_\ivt-ha-2024-vite\src\main\java\AsteroidMining\Resource.java
-D:\ivt_\ivt-ha-2024-vite\src\main\java\AsteroidMining\RadioActiveAsteroid.java
-D:\ivt_\ivt-ha-2024-vite\src\main\java\AsteroidMining\ID.java
+C:\Users\ruvej\Desktop\4th BSc Year\8th Semester\Integration and Verification Techniques\HOMEWORK\ivt-ha-2024-vite\src\main\java\AsteroidMining\Direction.java
+C:\Users\ruvej\Desktop\4th BSc Year\8th Semester\Integration and Verification Techniques\HOMEWORK\ivt-ha-2024-vite\src\main\java\AsteroidMining\Carbon.java
+C:\Users\ruvej\Desktop\4th BSc Year\8th Semester\Integration and Verification Techniques\HOMEWORK\ivt-ha-2024-vite\src\main\java\AsteroidMining\Uranium.java
+C:\Users\ruvej\Desktop\4th BSc Year\8th Semester\Integration and Verification Techniques\HOMEWORK\ivt-ha-2024-vite\src\main\java\AsteroidMining\Menu.java
+C:\Users\ruvej\Desktop\4th BSc Year\8th Semester\Integration and Verification Techniques\HOMEWORK\ivt-ha-2024-vite\src\main\java\AsteroidMining\Settler.java
+C:\Users\ruvej\Desktop\4th BSc Year\8th Semester\Integration and Verification Techniques\HOMEWORK\ivt-ha-2024-vite\src\main\java\AsteroidMining\Place.java
+C:\Users\ruvej\Desktop\4th BSc Year\8th Semester\Integration and Verification Techniques\HOMEWORK\ivt-ha-2024-vite\src\main\java\AsteroidMining\Handler.java
+C:\Users\ruvej\Desktop\4th BSc Year\8th Semester\Integration and Verification Techniques\HOMEWORK\ivt-ha-2024-vite\src\main\java\AsteroidMining\Resource.java
+C:\Users\ruvej\Desktop\4th BSc Year\8th Semester\Integration and Verification Techniques\HOMEWORK\ivt-ha-2024-vite\src\main\java\AsteroidMining\Robot.java
+C:\Users\ruvej\Desktop\4th BSc Year\8th Semester\Integration and Verification Techniques\HOMEWORK\ivt-ha-2024-vite\src\main\java\AsteroidMining\TeleportationGate.java
+C:\Users\ruvej\Desktop\4th BSc Year\8th Semester\Integration and Verification Techniques\HOMEWORK\ivt-ha-2024-vite\src\main\java\AsteroidMining\ID.java
+C:\Users\ruvej\Desktop\4th BSc Year\8th Semester\Integration and Verification Techniques\HOMEWORK\ivt-ha-2024-vite\src\main\java\AsteroidMining\Window.java
+C:\Users\ruvej\Desktop\4th BSc Year\8th Semester\Integration and Verification Techniques\HOMEWORK\ivt-ha-2024-vite\src\main\java\AsteroidMining\GameObject.java
+C:\Users\ruvej\Desktop\4th BSc Year\8th Semester\Integration and Verification Techniques\HOMEWORK\ivt-ha-2024-vite\src\main\java\AsteroidMining\Asteroid.java
+C:\Users\ruvej\Desktop\4th BSc Year\8th Semester\Integration and Verification Techniques\HOMEWORK\ivt-ha-2024-vite\src\main\java\AsteroidMining\SunStorm.java
+C:\Users\ruvej\Desktop\4th BSc Year\8th Semester\Integration and Verification Techniques\HOMEWORK\ivt-ha-2024-vite\src\main\java\AsteroidMining\RadioActiveAsteroid.java
+C:\Users\ruvej\Desktop\4th BSc Year\8th Semester\Integration and Verification Techniques\HOMEWORK\ivt-ha-2024-vite\src\main\java\AsteroidMining\Iron.java
+C:\Users\ruvej\Desktop\4th BSc Year\8th Semester\Integration and Verification Techniques\HOMEWORK\ivt-ha-2024-vite\src\main\java\AsteroidMining\SpaceShip.java
+C:\Users\ruvej\Desktop\4th BSc Year\8th Semester\Integration and Verification Techniques\HOMEWORK\ivt-ha-2024-vite\src\main\java\AsteroidMining\Visitor.java
+C:\Users\ruvej\Desktop\4th BSc Year\8th Semester\Integration and Verification Techniques\HOMEWORK\ivt-ha-2024-vite\src\main\java\AsteroidMining\Game.java
+C:\Users\ruvej\Desktop\4th BSc Year\8th Semester\Integration and Verification Techniques\HOMEWORK\ivt-ha-2024-vite\src\main\java\AsteroidMining\Resources\STATE.java
+C:\Users\ruvej\Desktop\4th BSc Year\8th Semester\Integration and Verification Techniques\HOMEWORK\ivt-ha-2024-vite\src\main\java\AsteroidMining\KeyHandler.java
+C:\Users\ruvej\Desktop\4th BSc Year\8th Semester\Integration and Verification Techniques\HOMEWORK\ivt-ha-2024-vite\src\main\java\AsteroidMining\WaterIce.java
