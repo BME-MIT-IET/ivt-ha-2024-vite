@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd" version="6.55.0" timestamp="2024-05-10T11:48:14.548">
-<file name="D:\ivt_\ivt-ha-2024-vite\src\main\java\AsteroidMining\Asteroid.java">
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd" version="6.55.0" timestamp="2024-05-10T21:05:40.524">
+<file name="C:\Users\ruvej\Desktop\4th BSc Year\8th Semester\Integration and Verification Techniques\HOMEWORK\ivt-ha-2024-vite\src\main\java\AsteroidMining\Asteroid.java">
 <violation beginline="12" endline="12" begincolumn="21" endcolumn="32" rule="RedundantFieldInitializer" ruleset="Performance" package="AsteroidMining" class="Asteroid" variable="hollow" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_performance.html#redundantfieldinitializer" priority="3">
 Avoid using redundant field initializer for 'hollow'
 </violation>
@@ -41,7 +41,7 @@ Potential violation of Law of Demeter (method chain calls)
 Potential violation of Law of Demeter (object not created locally)
 </violation>
 </file>
-<file name="D:\ivt_\ivt-ha-2024-vite\src\main\java\AsteroidMining\Game.java">
+<file name="C:\Users\ruvej\Desktop\4th BSc Year\8th Semester\Integration and Verification Techniques\HOMEWORK\ivt-ha-2024-vite\src\main\java\AsteroidMining\Game.java">
 <violation beginline="14" endline="171" begincolumn="8" endcolumn="1" rule="MissingSerialVersionUID" ruleset="Error Prone" package="AsteroidMining" class="Game" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_errorprone.html#missingserialversionuid" priority="3">
 Classes implementing Serializable should set a serialVersionUID
 </violation>
@@ -103,7 +103,7 @@ Potential violation of Law of Demeter (object not created locally)
 Potential violation of Law of Demeter (object not created locally)
 </violation>
 </file>
-<file name="D:\ivt_\ivt-ha-2024-vite\src\main\java\AsteroidMining\GameObject.java">
+<file name="C:\Users\ruvej\Desktop\4th BSc Year\8th Semester\Integration and Verification Techniques\HOMEWORK\ivt-ha-2024-vite\src\main\java\AsteroidMining\GameObject.java">
 <violation beginline="8" endline="8" begincolumn="45" endcolumn="50" rule="RedundantFieldInitializer" ruleset="Performance" package="AsteroidMining" class="GameObject" variable="velX" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_performance.html#redundantfieldinitializer" priority="3">
 Avoid using redundant field initializer for 'velX'
 </violation>
@@ -117,12 +117,12 @@ Avoid using redundant field initializer for 'height'
 Avoid using redundant field initializer for 'width'
 </violation>
 </file>
-<file name="D:\ivt_\ivt-ha-2024-vite\src\main\java\AsteroidMining\Handler.java">
+<file name="C:\Users\ruvej\Desktop\4th BSc Year\8th Semester\Integration and Verification Techniques\HOMEWORK\ivt-ha-2024-vite\src\main\java\AsteroidMining\Handler.java">
 <violation beginline="59" endline="59" begincolumn="17" endcolumn="43" rule="LawOfDemeter" ruleset="Design" package="AsteroidMining" class="Handler" method="checkAsteroids" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
 Potential violation of Law of Demeter (object not created locally)
 </violation>
 </file>
-<file name="D:\ivt_\ivt-ha-2024-vite\src\main\java\AsteroidMining\KeyHandler.java">
+<file name="C:\Users\ruvej\Desktop\4th BSc Year\8th Semester\Integration and Verification Techniques\HOMEWORK\ivt-ha-2024-vite\src\main\java\AsteroidMining\KeyHandler.java">
 <violation beginline="10" endline="10" begincolumn="21" endcolumn="27" rule="ImmutableField" ruleset="Design" package="AsteroidMining" class="KeyHandler" variable="handler" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#immutablefield" priority="3">
 Private field 'handler' could be made final; it is only initialized in the declaration or constructor.
 </violation>
@@ -133,7 +133,7 @@ Private field 'game' could be made final; it is only initialized in the declarat
 The method 'keyPressed(KeyEvent)' has a cyclomatic complexity of 16.
 </violation>
 </file>
-<file name="D:\ivt_\ivt-ha-2024-vite\src\main\java\AsteroidMining\Menu.java">
+<file name="C:\Users\ruvej\Desktop\4th BSc Year\8th Semester\Integration and Verification Techniques\HOMEWORK\ivt-ha-2024-vite\src\main\java\AsteroidMining\Menu.java">
 <violation beginline="16" endline="16" begincolumn="18" endcolumn="21" rule="ImmutableField" ruleset="Design" package="AsteroidMining" class="Menu" variable="game" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#immutablefield" priority="3">
 Private field 'game' could be made final; it is only initialized in the declaration or constructor.
 </violation>
@@ -147,12 +147,12 @@ Avoid using redundant field initializer for 'logo'
 System.exit() should not be used in J2EE/JEE apps
 </violation>
 </file>
-<file name="D:\ivt_\ivt-ha-2024-vite\src\main\java\AsteroidMining\Resource.java">
+<file name="C:\Users\ruvej\Desktop\4th BSc Year\8th Semester\Integration and Verification Techniques\HOMEWORK\ivt-ha-2024-vite\src\main\java\AsteroidMining\Resource.java">
 <violation beginline="9" endline="9" begincolumn="29" endcolumn="38" rule="RedundantFieldInitializer" ruleset="Performance" package="AsteroidMining" class="Resource" variable="img" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_performance.html#redundantfieldinitializer" priority="3">
 Avoid using redundant field initializer for 'img'
 </violation>
 </file>
-<file name="D:\ivt_\ivt-ha-2024-vite\src\main\java\AsteroidMining\Robot.java">
+<file name="C:\Users\ruvej\Desktop\4th BSc Year\8th Semester\Integration and Verification Techniques\HOMEWORK\ivt-ha-2024-vite\src\main\java\AsteroidMining\Robot.java">
 <violation beginline="18" endline="18" begincolumn="9" endcolumn="16" rule="RedundantFieldInitializer" ruleset="Performance" package="AsteroidMining" class="Robot" variable="time" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_performance.html#redundantfieldinitializer" priority="3">
 Avoid using redundant field initializer for 'time'
 </violation>
@@ -166,7 +166,7 @@ Avoid unnecessary comparisons in boolean expressions
 Avoid assignments in operands
 </violation>
 </file>
-<file name="D:\ivt_\ivt-ha-2024-vite\src\main\java\AsteroidMining\Settler.java">
+<file name="C:\Users\ruvej\Desktop\4th BSc Year\8th Semester\Integration and Verification Techniques\HOMEWORK\ivt-ha-2024-vite\src\main\java\AsteroidMining\Settler.java">
 <violation beginline="14" endline="14" begincolumn="37" endcolumn="41" rule="ImmutableField" ruleset="Design" package="AsteroidMining" class="Settler" variable="gates" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#immutablefield" priority="3">
 Private field 'gates' could be made final; it is only initialized in the declaration or constructor.
 </violation>
@@ -201,7 +201,7 @@ Avoid using Literals in Conditional Statements
 Avoid using Literals in Conditional Statements
 </violation>
 </file>
-<file name="D:\ivt_\ivt-ha-2024-vite\src\main\java\AsteroidMining\SpaceShip.java">
+<file name="C:\Users\ruvej\Desktop\4th BSc Year\8th Semester\Integration and Verification Techniques\HOMEWORK\ivt-ha-2024-vite\src\main\java\AsteroidMining\SpaceShip.java">
 <violation beginline="12" endline="12" begincolumn="17" endcolumn="24" rule="ImmutableField" ruleset="Design" package="AsteroidMining" class="SpaceShip" variable="capacity" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#immutablefield" priority="3">
 Private field 'capacity' could be made final; it is only initialized in the declaration or constructor.
 </violation>
@@ -221,7 +221,7 @@ Potential violation of Law of Demeter (method chain calls)
 Avoid unnecessary if..then..else statements when returning booleans
 </violation>
 </file>
-<file name="D:\ivt_\ivt-ha-2024-vite\src\main\java\AsteroidMining\SunStorm.java">
+<file name="C:\Users\ruvej\Desktop\4th BSc Year\8th Semester\Integration and Verification Techniques\HOMEWORK\ivt-ha-2024-vite\src\main\java\AsteroidMining\SunStorm.java">
 <violation beginline="6" endline="6" begincolumn="13" endcolumn="21" rule="SingularField" ruleset="Design" package="AsteroidMining" class="SunStorm" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#singularfield" priority="3">
 Perhaps 'time' could be replaced by a local variable.
 </violation>
@@ -244,7 +244,7 @@ Deeply nested if..then statements are hard to read
 Potential violation of Law of Demeter (object not created locally)
 </violation>
 </file>
-<file name="D:\ivt_\ivt-ha-2024-vite\src\main\java\AsteroidMining\Visitor.java">
+<file name="C:\Users\ruvej\Desktop\4th BSc Year\8th Semester\Integration and Verification Techniques\HOMEWORK\ivt-ha-2024-vite\src\main\java\AsteroidMining\Visitor.java">
 <violation beginline="12" endline="12" begincolumn="23" endcolumn="34" rule="RedundantFieldInitializer" ruleset="Performance" package="AsteroidMining" class="Visitor" variable="hidden" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_performance.html#redundantfieldinitializer" priority="3">
 Avoid using redundant field initializer for 'hidden'
 </violation>
@@ -267,7 +267,7 @@ Potential violation of Law of Demeter (static property access)
 Potential violation of Law of Demeter (object not created locally)
 </violation>
 </file>
-<file name="D:\ivt_\ivt-ha-2024-vite\src\main\java\AsteroidMining\Window.java">
+<file name="C:\Users\ruvej\Desktop\4th BSc Year\8th Semester\Integration and Verification Techniques\HOMEWORK\ivt-ha-2024-vite\src\main\java\AsteroidMining\Window.java">
 <violation beginline="5" endline="32" begincolumn="8" endcolumn="1" rule="MissingSerialVersionUID" ruleset="Error Prone" package="AsteroidMining" class="Window" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_errorprone.html#missingserialversionuid" priority="3">
 Classes implementing Serializable should set a serialVersionUID
 </violation>

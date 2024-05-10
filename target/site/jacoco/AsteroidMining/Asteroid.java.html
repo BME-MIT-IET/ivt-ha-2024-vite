@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Asteroid.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Asteroid-Mining</a> &gt; <a href="index.source.html" class="el_package">AsteroidMining</a> &gt; <span class="el_source">Asteroid.java</span></div><h1>Asteroid.java</h1><pre class="source lang-java linenums">package AsteroidMining;
+import javax.imageio.ImageIO;
+import java.awt.*;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
+import AsteroidMining.*;
+
+
+public class Asteroid extends Place {
+
+<span class="fc" id="L12">    private boolean hollow=false;</span>
+    protected int depth;
+<span class="fc" id="L14">    protected Resource resource=null;</span>
+<span class="fc" id="L15">    private BufferedImage img = null;</span>
+    private boolean _isPerihelion;
+    private int rad;
+    public int coreX, coreY;
+
+
+    public Asteroid(int x, int y, Resource r, int depth) {
+<span class="fc" id="L22">        super(x, y, ID.Asteroid);</span>
+
+<span class="fc bfc" id="L24" title="All 2 branches covered.">        if(r!=null) {</span>
+<span class="fc" id="L25">            addResource(r);</span>
+        }
+        else {
+<span class="fc" id="L28">            this.hollow = true;</span>
+
+        }
+
+<span class="fc" id="L32">        this.depth = depth;</span>
+<span class="fc" id="L33">        this.rad = depth;</span>
+
+<span class="fc" id="L35">        width =rad*12;</span>
+<span class="fc" id="L36">        height = rad*12;</span>
+<span class="fc" id="L37">        coreX = getX()+width/2-5;</span>
+<span class="fc" id="L38">        coreY = getY()+height/2;</span>
+
+
+
+        try{
+<span class="fc" id="L43">                img = ImageIO.read(new File(&quot;Assets/asteroid1.png&quot;));</span>
+        }
+<span class="nc" id="L45">        catch(IOException e){</span>
+<span class="nc" id="L46">            System.out.println(e.getMessage());</span>
+<span class="fc" id="L47">        }</span>
+<span class="fc" id="L48">    }</span>
+
+    @Override
+    public void tick() {
+
+<span class="nc" id="L53">    }</span>
+
+    @Override
+    public void render(Graphics g) {
+
+<span class="nc bnc" id="L58" title="All 2 branches missed.">        if(depth==rad) {</span>
+            try{
+<span class="nc" id="L60">                    img = ImageIO.read(new File(&quot;Assets/Asteroid1.png&quot;));</span>
+            }
+<span class="nc" id="L62">            catch(IOException e){</span>
+<span class="nc" id="L63">                System.out.println(e.getMessage());</span>
+<span class="nc" id="L64">            }</span>
+<span class="nc bnc" id="L65" title="All 2 branches missed.">        }else if(depth &gt;= rad*0.75){</span>
+            try{
+<span class="nc" id="L67">                    img = ImageIO.read(new File(&quot;Assets/drilled1.png&quot;));</span>
+            }
+<span class="nc" id="L69">            catch(IOException e){</span>
+<span class="nc" id="L70">                System.out.println(e.getMessage());</span>
+<span class="nc" id="L71">            }</span>
+
+        }
+<span class="nc bnc" id="L74" title="All 2 branches missed.">        else if(depth &gt;= rad*0.5){</span>
+        try{
+<span class="nc" id="L76">            img = ImageIO.read(new File(&quot;Assets/drilled2.png&quot;));</span>
+        }
+<span class="nc" id="L78">        catch(IOException e){</span>
+<span class="nc" id="L79">            System.out.println(e.getMessage());</span>
+<span class="nc" id="L80">        }</span>
+
+        }
+<span class="nc bnc" id="L83" title="All 2 branches missed.">        else if(depth==0){</span>
+        try{
+<span class="nc" id="L85">            img = ImageIO.read(new File(&quot;Assets/drilled3.png&quot;));</span>
+        }
+<span class="nc" id="L87">        catch(IOException e){</span>
+<span class="nc" id="L88">            System.out.println(e.getMessage());</span>
+<span class="nc" id="L89">        }</span>
+
+    }
+<span class="nc" id="L92">        g.drawImage(img, x, y, width, height, null);</span>
+<span class="nc bnc" id="L93" title="All 4 branches missed.">        if(resource!=null &amp;&amp; depth&lt;=0){</span>
+<span class="nc" id="L94">            g.drawImage(resource.getImg(), coreX, coreY, 30,30, null);</span>
+        }
+
+<span class="nc" id="L97">    }</span>
+
+
+
+    public void deepenHole(int n) {
+<span class="fc" id="L102">        this.depth -= n;</span>
+<span class="fc" id="L103">    }</span>
+
+    public Resource getResource(){
+<span class="fc" id="L106">        return this.resource;</span>
+    }
+
+    public void addResource(Resource r){
+<span class="pc bpc" id="L110" title="1 of 2 branches missed.">        if(resource instanceof Uranium)</span>
+<span class="nc" id="L111">            this.setId(ID.RadioActiveAsteroid);</span>
+<span class="fc" id="L112">        this.resource = r;</span>
+<span class="fc" id="L113">        this.hollow = false;</span>
+<span class="fc" id="L114">    }</span>
+    public void removeResource(){
+<span class="fc" id="L116">        this.resource = null;</span>
+<span class="fc" id="L117">        hollow= true;</span>
+<span class="fc" id="L118">    }</span>
+
+    public boolean isHollow(){
+<span class="fc" id="L121">        return hollow;</span>
+    }
+
+    public boolean isPerihelion(){
+<span class="nc" id="L125">        return _isPerihelion;</span>
+    }
+    public boolean isFullyDrilled(){
+<span class="fc bfc" id="L128" title="All 2 branches covered.">        if(depth&lt;=0){</span>
+<span class="fc" id="L129">            return true;</span>
+        }
+<span class="fc" id="L131">        return false;</span>
+    }
+    public void inPerihelion(boolean exploded){
+<span class="fc" id="L134">        this._isPerihelion = true;</span>
+<span class="pc bpc" id="L135" title="1 of 2 branches missed.">        if(this.isFullyDrilled()) {</span>
+<span class="fc bfc" id="L136" title="All 2 branches covered.">            if (this.getId() == ID.RadioActiveAsteroid) {</span>
+<span class="fc" id="L137">                explode(exploded);</span>
+            }
+<span class="fc bfc" id="L139" title="All 2 branches covered.">            if (this.resource.getId() == ID.WaterIce) {</span>
+<span class="fc" id="L140">                WaterIce wIce = (WaterIce) resource;</span>
+<span class="fc" id="L141">                wIce.sublime(this);</span>
+            }
+        }
+<span class="fc" id="L144">    }</span>
+
+    public void explode(boolean ex) {
+<span class="fc bfc" id="L147" title="All 2 branches covered.">        for (Visitor visitor : visitors) {</span>
+<span class="pc bpc" id="L148" title="1 of 2 branches missed.">            if (visitor.getId().equals(ID.Settler)) {</span>
+<span class="fc" id="L149">                visitor.die();</span>
+            }
+<span class="pc bpc" id="L151" title="1 of 2 branches missed.">            if (visitor.getId().equals(ID.Robot)) {</span>
+<span class="nc" id="L152">                Asteroid a2 = (Asteroid) this.getNeighbour();</span>
+<span class="nc" id="L153">                a2.addVisitor(visitor);</span>
+<span class="nc" id="L154">                this.removeVisitor(visitor);</span>
+            }
+
+<span class="fc" id="L157">        }</span>
+<span class="fc" id="L158">    }</span>
+
+}
+
+
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.9.202303310957</span></div></body></html>
