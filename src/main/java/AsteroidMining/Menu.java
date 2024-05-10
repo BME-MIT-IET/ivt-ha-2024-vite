@@ -15,8 +15,10 @@ public class Menu extends MouseAdapter{
 
     private Game game;
 
-    BufferedImage back = null;
-    BufferedImage logo = null, play, exit;
+    public BufferedImage back = null;
+    public BufferedImage logo = null;
+    public BufferedImage play;
+    public BufferedImage exit;
 
     public Menu(Game game) {
         this.game = game;

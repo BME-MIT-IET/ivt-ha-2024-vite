@@ -20,7 +20,7 @@ public abstract class GameObject {
     public abstract void tick();
 
     Rectangle getBounds(){
-<span class="nc" id="L23">        return new Rectangle(x,y, width, height);</span>
+<span class="fc" id="L23">        return new Rectangle(x,y, width, height);</span>
     }
 
     public abstract void render(Graphics g) throws IOException;
@@ -40,15 +40,15 @@ public abstract class GameObject {
 <span class="fc" id="L40">        return this.y;</span>
     }
     public void setVelX(int vx){
-<span class="nc" id="L43">        this.velX = vx;</span>
-<span class="nc" id="L44">    }</span>
+<span class="fc" id="L43">        this.velX = vx;</span>
+<span class="fc" id="L44">    }</span>
     public int getVelX(int vx){
 <span class="nc" id="L46">        return this.velX;</span>
     }
 
     public void setVelY(int vy){
-<span class="nc" id="L50">        this.velY = vy;</span>
-<span class="nc" id="L51">    }</span>
+<span class="fc" id="L50">        this.velY = vy;</span>
+<span class="fc" id="L51">    }</span>
     public int getVelY(int vx){
 <span class="nc" id="L53">        return this.velY;</span>
     }

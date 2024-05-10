@@ -14,55 +14,55 @@ import java.util.HashMap;
 public class Game extends Canvas implements Runnable{
 
     private Thread thread;
-<span class="nc" id="L17">    protected static boolean running = true;</span>
+<span class="fc" id="L17">    public static boolean running = true;</span>
 
-<span class="nc" id="L19">    public static int WIDTH = 1000;</span>
-<span class="nc" id="L20">    public static int HEIGHT = WIDTH / 12 * 9;</span>
-    Handler handler;
-<span class="nc" id="L22">    BufferedImage backImg = null;</span>
+<span class="fc" id="L19">    public static int WIDTH = 1000;</span>
+<span class="fc" id="L20">    public static int HEIGHT = WIDTH / 12 * 9;</span>
+    public Handler handler;
+<span class="fc" id="L22">    BufferedImage backImg = null;</span>
     Settler settler;
-    HashMap&lt;Resource, Integer&gt; nResources;
-    SunStorm sunStorm;
-<span class="nc" id="L26">    public static STATE gameState = STATE.Menu;</span>
-<span class="nc" id="L27">    public boolean paused = false;</span>
-    Menu menu;
+    public HashMap&lt;Resource, Integer&gt; nResources;
+    public SunStorm sunStorm;
+<span class="fc" id="L26">    public static STATE gameState = STATE.Menu;</span>
+<span class="fc" id="L27">    public boolean paused = false;</span>
+    public Menu menu;
 
-<span class="nc" id="L30">    public Game(){</span>
+<span class="fc" id="L30">    public Game(){</span>
 
-<span class="nc" id="L32">        menu = new Menu(this);</span>
+<span class="fc" id="L32">        menu = new Menu(this);</span>
 
-<span class="nc" id="L34">        handler = new Handler();</span>
-<span class="nc" id="L35">        nResources = new HashMap&lt;Resource, Integer&gt;();</span>
-<span class="nc" id="L36">        nResources.put(new Carbon(), 1);</span>
-<span class="nc" id="L37">        nResources.put(new Iron(), 1);</span>
-<span class="nc" id="L38">        nResources.put(new Uranium(), 1);</span>
-<span class="nc" id="L39">        nResources.put(new WaterIce(), 1);</span>
+<span class="fc" id="L34">        handler = new Handler();</span>
+<span class="fc" id="L35">        nResources = new HashMap&lt;Resource, Integer&gt;();</span>
+<span class="fc" id="L36">        nResources.put(new Carbon(), 1);</span>
+<span class="fc" id="L37">        nResources.put(new Iron(), 1);</span>
+<span class="fc" id="L38">        nResources.put(new Uranium(), 1);</span>
+<span class="fc" id="L39">        nResources.put(new WaterIce(), 1);</span>
 
-<span class="nc" id="L41">        Settler settler = new Settler(300, 400, handler);</span>
-<span class="nc" id="L42">        Asteroid a1 = new Asteroid(100, 500, null, 10);</span>
+<span class="fc" id="L41">        Settler settler = new Settler(300, 400, handler);</span>
+<span class="fc" id="L42">        Asteroid a1 = new Asteroid(100, 500, null, 10);</span>
         //settler.setPlace(a1);
         //a1.addVisitor(settler);
 
-<span class="nc" id="L46">        handler.addObject(new Asteroid(100, 150, new Carbon(), 10));</span>
-<span class="nc" id="L47">        handler.addObject(new Asteroid(400, 220, new Iron(), 10));</span>
-<span class="nc" id="L48">        handler.addObject(new Asteroid(700, 250, new WaterIce(), 10));</span>
-<span class="nc" id="L49">        handler.addObject(new Asteroid(600, 500, new Uranium(), 10));</span>
-<span class="nc" id="L50">        handler.addObject(a1);</span>
-<span class="nc" id="L51">        handler.addObject(settler);</span>
+<span class="fc" id="L46">        handler.addObject(new Asteroid(100, 150, new Carbon(), 10));</span>
+<span class="fc" id="L47">        handler.addObject(new Asteroid(400, 220, new Iron(), 10));</span>
+<span class="fc" id="L48">        handler.addObject(new Asteroid(700, 250, new WaterIce(), 10));</span>
+<span class="fc" id="L49">        handler.addObject(new Asteroid(600, 500, new Uranium(), 10));</span>
+<span class="fc" id="L50">        handler.addObject(a1);</span>
+<span class="fc" id="L51">        handler.addObject(settler);</span>
 
-<span class="nc" id="L53">        this.addMouseListener(menu);</span>
-<span class="nc" id="L54">        this.addKeyListener(new KeyHandler(handler, this));</span>
+<span class="fc" id="L53">        this.addMouseListener(menu);</span>
+<span class="fc" id="L54">        this.addKeyListener(new KeyHandler(handler, this));</span>
 
-<span class="nc" id="L56">        new Window(WIDTH, HEIGHT, &quot;Asteroid Mining&quot;, this);</span>
+<span class="fc" id="L56">        new Window(WIDTH, HEIGHT, &quot;Asteroid Mining&quot;, this);</span>
 
-<span class="nc" id="L58">        this.requestFocusInWindow();</span>
+<span class="fc" id="L58">        this.requestFocusInWindow();</span>
 
-<span class="nc" id="L60">    }</span>
+<span class="fc" id="L60">    }</span>
     public synchronized void start(){
-<span class="nc" id="L62">        thread = new Thread(this);</span>
-<span class="nc" id="L63">        thread.start();</span>
-<span class="nc" id="L64">        running = true;</span>
-<span class="nc" id="L65">    }</span>
+<span class="fc" id="L62">        thread = new Thread(this);</span>
+<span class="fc" id="L63">        thread.start();</span>
+<span class="fc" id="L64">        running = true;</span>
+<span class="fc" id="L65">    }</span>
 
     public synchronized void stop() {
         try {
@@ -75,39 +75,39 @@ public class Game extends Canvas implements Runnable{
 
     @Override
     public void run() {
-<span class="nc" id="L78">        long lastTime = System.nanoTime();</span>
-<span class="nc" id="L79">        double amountOfTicks = 60.0;</span>
-<span class="nc" id="L80">        double ns = 1000000000/ amountOfTicks;</span>
-<span class="nc" id="L81">        double delta = 0;</span>
-<span class="nc" id="L82">        long timer = System.currentTimeMillis();</span>
-<span class="nc" id="L83">        int frames = 0;</span>
+<span class="fc" id="L78">        long lastTime = System.nanoTime();</span>
+<span class="fc" id="L79">        double amountOfTicks = 60.0;</span>
+<span class="fc" id="L80">        double ns = 1000000000/ amountOfTicks;</span>
+<span class="fc" id="L81">        double delta = 0;</span>
+<span class="fc" id="L82">        long timer = System.currentTimeMillis();</span>
+<span class="fc" id="L83">        int frames = 0;</span>
 
-<span class="nc bnc" id="L85" title="All 2 branches missed.">        while(running) {</span>
-<span class="nc" id="L86">            long now = System.nanoTime();</span>
-<span class="nc" id="L87">            delta += (now- lastTime) / ns;</span>
-<span class="nc" id="L88">            lastTime = now;</span>
+<span class="pc bpc" id="L85" title="1 of 2 branches missed.">        while(running) {</span>
+<span class="fc" id="L86">            long now = System.nanoTime();</span>
+<span class="fc" id="L87">            delta += (now- lastTime) / ns;</span>
+<span class="fc" id="L88">            lastTime = now;</span>
 
-<span class="nc bnc" id="L90" title="All 2 branches missed.">            while(delta &gt;= 1) {</span>
-<span class="nc" id="L91">                tick();</span>
-<span class="nc" id="L92">                delta--;</span>
+<span class="fc bfc" id="L90" title="All 2 branches covered.">            while(delta &gt;= 1) {</span>
+<span class="fc" id="L91">                tick();</span>
+<span class="fc" id="L92">                delta--;</span>
 
             }
-<span class="nc bnc" id="L95" title="All 2 branches missed.">            if(running) {</span>
+<span class="pc bpc" id="L95" title="1 of 2 branches missed.">            if(running) {</span>
                 try {
-<span class="nc" id="L97">                    render();</span>
+<span class="fc" id="L97">                    render();</span>
 <span class="nc" id="L98">                } catch (IOException e) {</span>
 <span class="nc" id="L99">                    e.printStackTrace();</span>
-<span class="nc" id="L100">                }</span>
+<span class="fc" id="L100">                }</span>
             }
 
-<span class="nc" id="L103">            frames++;</span>
+<span class="fc" id="L103">            frames++;</span>
 
-<span class="nc bnc" id="L105" title="All 2 branches missed.">            if(System.currentTimeMillis() - timer &gt; 1000) {</span>
-<span class="nc" id="L106">                timer += 1000;</span>
+<span class="fc bfc" id="L105" title="All 2 branches covered.">            if(System.currentTimeMillis() - timer &gt; 1000) {</span>
+<span class="fc" id="L106">                timer += 1000;</span>
                 //System.out.println(&quot;FPS:&quot; + frames);
-<span class="nc" id="L108">                frames = 0;</span>
+<span class="fc" id="L108">                frames = 0;</span>
             }
-<span class="nc" id="L110">        }</span>
+<span class="fc" id="L110">        }</span>
 <span class="nc" id="L111">        stop();</span>
 <span class="nc" id="L112">    }</span>
     /*Ending the game, exittting*/
@@ -117,14 +117,14 @@ public class Game extends Canvas implements Runnable{
 
     /*Creating sunstorm for fixed time*/
     public void createSunStorm(int x, int y, int time){
-<span class="nc" id="L120">        sunStorm = new SunStorm(x,y, time);</span>
-<span class="nc bnc" id="L121" title="All 2 branches missed.">        for(GameObject obj : handler.objects){</span>
-<span class="nc bnc" id="L122" title="All 2 branches missed.">            if(obj instanceof Place){</span>
-<span class="nc" id="L123">                Asteroid a1 = (Asteroid) obj;</span>
-<span class="nc" id="L124">                sunStorm.collisionWith(a1);</span>
+<span class="fc" id="L120">        sunStorm = new SunStorm(x,y, time);</span>
+<span class="fc bfc" id="L121" title="All 2 branches covered.">        for(GameObject obj : handler.objects){</span>
+<span class="fc bfc" id="L122" title="All 2 branches covered.">            if(obj instanceof Place){</span>
+<span class="fc" id="L123">                Asteroid a1 = (Asteroid) obj;</span>
+<span class="fc" id="L124">                sunStorm.collisionWith(a1);</span>
             }
-<span class="nc" id="L126">        }</span>
-<span class="nc" id="L127">    }</span>
+<span class="fc" id="L126">        }</span>
+<span class="fc" id="L127">    }</span>
     public void determinePerihelion() {
 <span class="nc bnc" id="L129" title="All 2 branches missed.">        if(handler!=null){</span>
 <span class="nc" id="L130">            handler.checkAsteroids();</span>
@@ -132,38 +132,38 @@ public class Game extends Canvas implements Runnable{
 
 <span class="nc" id="L133">    }</span>
 
-    private void tick() {
-<span class="nc" id="L136">        handler.tick();</span>
-<span class="nc" id="L137">    }</span>
+    public void tick() {
+<span class="fc" id="L136">        handler.tick();</span>
+<span class="fc" id="L137">    }</span>
 
     public void render() throws IOException {
-<span class="nc" id="L140">        BufferStrategy bs = this.getBufferStrategy();</span>
-<span class="nc bnc" id="L141" title="All 2 branches missed.">        if(bs==null) {</span>
-<span class="nc" id="L142">            this.createBufferStrategy(3);</span>
-<span class="nc" id="L143">            return;</span>
+<span class="fc" id="L140">        BufferStrategy bs = this.getBufferStrategy();</span>
+<span class="fc bfc" id="L141" title="All 2 branches covered.">        if(bs==null) {</span>
+<span class="fc" id="L142">            this.createBufferStrategy(3);</span>
+<span class="fc" id="L143">            return;</span>
         }
 
-<span class="nc" id="L146">        Graphics g = bs.getDrawGraphics();</span>
-<span class="nc" id="L147">        g.setColor(Color.BLACK);</span>
-<span class="nc" id="L148">        BufferedImage op=null;</span>
-<span class="nc bnc" id="L149" title="All 2 branches missed.">        if(gameState==STATE.Game) {</span>
+<span class="fc" id="L146">        Graphics g = bs.getDrawGraphics();</span>
+<span class="fc" id="L147">        g.setColor(Color.BLACK);</span>
+<span class="fc" id="L148">        BufferedImage op=null;</span>
+<span class="fc bfc" id="L149" title="All 2 branches covered.">        if(gameState==STATE.Game) {</span>
             try {
-<span class="nc" id="L151">                backImg = ImageIO.read(new File(&quot;Assets/space.png&quot;));</span>
-<span class="nc" id="L152">                op = ImageIO.read(new File(&quot;Assets/operations.png&quot;));</span>
-<span class="nc" id="L153">                g.drawImage(backImg, 0, 0, this);</span>
+<span class="fc" id="L151">                backImg = ImageIO.read(new File(&quot;Assets/space.png&quot;));</span>
+<span class="fc" id="L152">                op = ImageIO.read(new File(&quot;Assets/operations.png&quot;));</span>
+<span class="fc" id="L153">                g.drawImage(backImg, 0, 0, this);</span>
 <span class="nc" id="L154">            } catch (IOException e) {</span>
 <span class="nc" id="L155">                e.printStackTrace();</span>
-<span class="nc" id="L156">            }</span>
-<span class="nc" id="L157">            handler.render(g);</span>
-<span class="nc" id="L158">            g.drawImage(op, 670, 550, 400, 150, null);</span>
+<span class="fc" id="L156">            }</span>
+<span class="fc" id="L157">            handler.render(g);</span>
+<span class="fc" id="L158">            g.drawImage(op, 670, 550, 400, 150, null);</span>
         }
-<span class="nc bnc" id="L160" title="All 2 branches missed.">        else if(gameState==STATE.Menu){</span>
-<span class="nc" id="L161">            menu.render(g);</span>
+<span class="pc bpc" id="L160" title="1 of 2 branches missed.">        else if(gameState==STATE.Menu){</span>
+<span class="fc" id="L161">            menu.render(g);</span>
         }
 
-<span class="nc" id="L164">        g.dispose();</span>
-<span class="nc" id="L165">        bs.show();</span>
-<span class="nc" id="L166">    }</span>
+<span class="fc" id="L164">        g.dispose();</span>
+<span class="fc" id="L165">        bs.show();</span>
+<span class="fc" id="L166">    }</span>
 
     public static void main(String args[]){
 <span class="nc" id="L169">        Game game = new Game();</span>

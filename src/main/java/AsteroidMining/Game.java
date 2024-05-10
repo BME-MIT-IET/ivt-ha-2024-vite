@@ -14,18 +14,18 @@ import java.util.HashMap;
 public class Game extends Canvas implements Runnable{
 
     private Thread thread;
-    protected static boolean running = true;
+    public static boolean running = true;
 
     public static int WIDTH = 1000;
     public static int HEIGHT = WIDTH / 12 * 9;
-    Handler handler;
+    public Handler handler;
     BufferedImage backImg = null;
     Settler settler;
-    HashMap<Resource, Integer> nResources;
-    SunStorm sunStorm;
+    public HashMap<Resource, Integer> nResources;
+    public SunStorm sunStorm;
     public static STATE gameState = STATE.Menu;
     public boolean paused = false;
-    Menu menu;
+    public Menu menu;
 
     public Game(){
 
@@ -132,7 +132,7 @@ public class Game extends Canvas implements Runnable{
 
     }
 
-    private void tick() {
+    public void tick() {
         handler.tick();
     }
 

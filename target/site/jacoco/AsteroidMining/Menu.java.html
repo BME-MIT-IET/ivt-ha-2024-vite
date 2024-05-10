@@ -15,65 +15,67 @@ public class Menu extends MouseAdapter{
 
     private Game game;
 
-<span class="nc" id="L18">    BufferedImage back = null;</span>
-<span class="nc" id="L19">    BufferedImage logo = null, play, exit;</span>
+<span class="fc" id="L18">    public BufferedImage back = null;</span>
+<span class="fc" id="L19">    public BufferedImage logo = null;</span>
+    public BufferedImage play;
+    public BufferedImage exit;
 
-<span class="nc" id="L21">    public Menu(Game game) {</span>
-<span class="nc" id="L22">        this.game = game;</span>
+<span class="fc" id="L23">    public Menu(Game game) {</span>
+<span class="fc" id="L24">        this.game = game;</span>
 
         try {
-<span class="nc" id="L25">            back= ImageIO.read(new File(&quot;Assets/space.png&quot;));</span>
-<span class="nc" id="L26">            logo= ImageIO.read(new File(&quot;Assets/logo.png&quot;));</span>
-<span class="nc" id="L27">            play= ImageIO.read(new File(&quot;Assets/play.png&quot;));</span>
-<span class="nc" id="L28">            exit= ImageIO.read(new File(&quot;Assets/exit.png&quot;));</span>
+<span class="fc" id="L27">            back= ImageIO.read(new File(&quot;Assets/space.png&quot;));</span>
+<span class="fc" id="L28">            logo= ImageIO.read(new File(&quot;Assets/logo.png&quot;));</span>
+<span class="fc" id="L29">            play= ImageIO.read(new File(&quot;Assets/play.png&quot;));</span>
+<span class="fc" id="L30">            exit= ImageIO.read(new File(&quot;Assets/exit.png&quot;));</span>
 
-<span class="nc" id="L30">        } catch (IOException e) {</span>
-<span class="nc" id="L31">            e.printStackTrace();</span>
-<span class="nc" id="L32">        }</span>
-<span class="nc" id="L33">    }</span>
+<span class="nc" id="L32">        } catch (IOException e) {</span>
+<span class="nc" id="L33">            e.printStackTrace();</span>
+<span class="fc" id="L34">        }</span>
+<span class="fc" id="L35">    }</span>
     public void mousePressed(MouseEvent e) {
-<span class="nc" id="L35">        int mouseX = e.getX();</span>
-<span class="nc" id="L36">        int mouseY = e.getY();</span>
+<span class="fc" id="L37">        int mouseX = e.getX();</span>
+<span class="fc" id="L38">        int mouseY = e.getY();</span>
 
-<span class="nc bnc" id="L38" title="All 6 branches missed.">        if(game.gameState== STATE.End || game.gameState==STATE.Menu &amp;&amp; !game.paused) {</span>
-<span class="nc bnc" id="L39" title="All 2 branches missed.">            if(mouseOver(mouseX, mouseY, 400, 350, 200, 80)) {</span>
-<span class="nc" id="L40">                game.gameState = STATE.Game;</span>
+<span class="pc bpc" id="L40" title="3 of 6 branches missed.">        if(game.gameState== STATE.End || game.gameState==STATE.Menu &amp;&amp; !game.paused) {</span>
+<span class="pc bpc" id="L41" title="1 of 2 branches missed.">            if(mouseOver(mouseX, mouseY, 400, 350, 200, 80)) {</span>
+<span class="fc" id="L42">                game.gameState = STATE.Game;</span>
 
             }
-<span class="nc bnc" id="L43" title="All 2 branches missed.">            if(mouseOver(mouseX, mouseY, 400, 450, 200, 80)) {</span>
-<span class="nc" id="L44">                System.exit(1);</span>
+<span class="pc bpc" id="L45" title="1 of 2 branches missed.">            if(mouseOver(mouseX, mouseY, 400, 450, 200, 80)) {</span>
+<span class="nc" id="L46">                System.exit(1);</span>
                 //game.gameState = STATE.Game;
             }
 
         }
 
-<span class="nc" id="L50">    }</span>
+<span class="fc" id="L52">    }</span>
 
 
     private boolean mouseOver(int mouseX, int mouseY, int x, int y, int width, int height) {
-<span class="nc bnc" id="L54" title="All 4 branches missed.">        if(mouseX &gt; x &amp;&amp; mouseX &lt; x+width) {</span>
-<span class="nc bnc" id="L55" title="All 4 branches missed.">            if(mouseY &gt; y &amp;&amp; mouseY &lt; y+height){</span>
-<span class="nc" id="L56">                return true;</span>
-<span class="nc" id="L57">            }else return false;</span>
-<span class="nc" id="L58">        }else return false;</span>
+<span class="pc bpc" id="L56" title="2 of 4 branches missed.">        if(mouseX &gt; x &amp;&amp; mouseX &lt; x+width) {</span>
+<span class="pc bpc" id="L57" title="1 of 4 branches missed.">            if(mouseY &gt; y &amp;&amp; mouseY &lt; y+height){</span>
+<span class="fc" id="L58">                return true;</span>
+<span class="fc" id="L59">            }else return false;</span>
+<span class="nc" id="L60">        }else return false;</span>
     }
 
     public void render(Graphics g) {
-<span class="nc" id="L62">        g.drawImage(back, 0, 0, game.WIDTH, game.HEIGHT, null);</span>
-<span class="nc" id="L63">        g.drawImage(logo, 150, 50, 700, 200, null);</span>
+<span class="fc" id="L64">        g.drawImage(back, 0, 0, game.WIDTH, game.HEIGHT, null);</span>
+<span class="fc" id="L65">        g.drawImage(logo, 150, 50, 700, 200, null);</span>
 
-<span class="nc" id="L65">        Font font2 = new Font(&quot;arial&quot;, 1, 30);</span>
+<span class="fc" id="L67">        Font font2 = new Font(&quot;arial&quot;, 1, 30);</span>
 
 
-<span class="nc bnc" id="L68" title="All 2 branches missed.">        if(game.gameState==STATE.End) {</span>
+<span class="pc bpc" id="L70" title="1 of 2 branches missed.">        if(game.gameState==STATE.End) {</span>
 
         }
-<span class="nc" id="L71">        g.setColor(Color.white);</span>
-<span class="nc" id="L72">        g.setFont(font2);</span>
+<span class="fc" id="L73">        g.setColor(Color.white);</span>
+<span class="fc" id="L74">        g.setFont(font2);</span>
 
-<span class="nc" id="L74">        g.drawImage(play, 400, 350, 200, 80, null);</span>
-<span class="nc" id="L75">        g.drawImage(exit,400, 450, 200, 80, null);</span>
+<span class="fc" id="L76">        g.drawImage(play, 400, 350, 200, 80, null);</span>
+<span class="fc" id="L77">        g.drawImage(exit,400, 450, 200, 80, null);</span>
 
-<span class="nc" id="L77">    }</span>
+<span class="fc" id="L79">    }</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.9.202303310957</span></div></body></html>

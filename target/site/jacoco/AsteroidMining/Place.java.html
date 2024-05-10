@@ -30,8 +30,8 @@ public abstract class Place extends GameObject {
     //public Visitor getVisitor(){return this.visitor;}
     /*Removing Visitor to the place*/
     public void removeVisitor(Visitor v){
-<span class="nc" id="L33">        visitors.remove(v);</span>
-<span class="nc" id="L34">    }</span>
+<span class="fc" id="L33">        visitors.remove(v);</span>
+<span class="fc" id="L34">    }</span>
     /*Getting the visitors*/
     public List&lt;Visitor&gt; getVisitors(){
 <span class="fc" id="L37">        return visitors;</span>
@@ -45,7 +45,7 @@ public abstract class Place extends GameObject {
 
     /*Returning the neighbouring asteroid*/
     public Place getNeighbour(){
-<span class="nc" id="L48">        return neighbours.get(0);</span>
+<span class="fc" id="L48">        return neighbours.get(0);</span>
     }
     /*Adding neighbour to the place*/
     public void addNeighbour(Place p){
