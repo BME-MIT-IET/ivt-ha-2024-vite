@@ -13,7 +13,7 @@ public class Asteroid extends Place {
     protected int depth;
     protected Resource resource=null;
     private BufferedImage img = null;
-    private boolean isPerihelion;
+    private boolean _isPerihelion;
     private int rad;
     public int coreX, coreY;
 
@@ -29,7 +29,6 @@ public class Asteroid extends Place {
 
         }
 
-
         this.depth = depth;
         this.rad = depth;
 
@@ -44,7 +43,7 @@ public class Asteroid extends Place {
                 img = ImageIO.read(new File("Assets/asteroid1.png"));
         }
         catch(IOException e){
-            e.printStackTrace();
+            System.out.println(e.getMessage());
         }
     }
 
@@ -61,14 +60,14 @@ public class Asteroid extends Place {
                     img = ImageIO.read(new File("Assets/Asteroid1.png"));
             }
             catch(IOException e){
-                e.printStackTrace();
+                System.out.println(e.getMessage());
             }
         }else if(depth >= rad*0.75){
             try{
                     img = ImageIO.read(new File("Assets/drilled1.png"));
             }
             catch(IOException e){
-                e.printStackTrace();
+                System.out.println(e.getMessage());
             }
 
         }
@@ -77,7 +76,7 @@ public class Asteroid extends Place {
             img = ImageIO.read(new File("Assets/drilled2.png"));
         }
         catch(IOException e){
-            e.printStackTrace();
+            System.out.println(e.getMessage());
         }
 
         }
@@ -86,7 +85,7 @@ public class Asteroid extends Place {
             img = ImageIO.read(new File("Assets/drilled3.png"));
         }
         catch(IOException e){
-            e.printStackTrace();
+            System.out.println(e.getMessage());
         }
 
     }
@@ -123,7 +122,7 @@ public class Asteroid extends Place {
     }
 
     public boolean isPerihelion(){
-        return isPerihelion;
+        return _isPerihelion;
     }
     public boolean isFullyDrilled(){
         if(depth<=0){
@@ -132,8 +131,7 @@ public class Asteroid extends Place {
         return false;
     }
     public void inPerihelion(boolean exploded){
-        System.out.println("Asteroid is in the perihelion!");
-        this.isPerihelion = true;
+        this._isPerihelion = true;
         if(this.isFullyDrilled()) {
             if (this.getId() == ID.RadioActiveAsteroid) {
                 explode(exploded);
@@ -146,22 +144,17 @@ public class Asteroid extends Place {
     }
 
     public void explode(boolean ex) {
-        System.out.println("Asteroid has been exploded!");
         for (Visitor visitor : visitors) {
             if (visitor.getId().equals(ID.Settler)) {
                 visitor.die();
-                System.out.println("Settler has been killed by asteroid explosion");
             }
             if (visitor.getId().equals(ID.Robot)) {
                 Asteroid a2 = (Asteroid) this.getNeighbour();
                 a2.addVisitor(visitor);
                 this.removeVisitor(visitor);
-                System.out.println("Robot has been moved to neighbouring asteroid");
             }
 
         }
-        ex = true;
-
     }
 
 }

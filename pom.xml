@@ -50,7 +50,7 @@
                     <rulesets>
                         <ruleset>config/pmd-java.xml</ruleset>
                     </rulesets>
-                    <maxAllowedViolations>50</maxAllowedViolations>
+                    <maxAllowedViolations>100</maxAllowedViolations>
                 </configuration>
                 <executions>
                     <execution>

@@ -13,7 +13,7 @@ public class Carbon extends Resource{
             img = ImageIO.read(new File("Assets/Carbon.png"));
         }
         catch(IOException e){
-            e.printStackTrace();
+            System.out.println(e.getMessage());
         }
     }
 }

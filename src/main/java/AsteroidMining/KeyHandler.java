@@ -16,6 +16,7 @@ public class KeyHandler extends KeyAdapter {
         this.game = game;
     }
 
+    @Override
     public void keyPressed(KeyEvent e){
         int key = e.getKeyCode();
         int vel = 3;
@@ -60,6 +61,8 @@ public class KeyHandler extends KeyAdapter {
                         break;
                     case KeyEvent.VK_P:
                         game.gameState = STATE.Menu;//pausing the game
+                        break;
+                    default:
                         break;
 
                 }

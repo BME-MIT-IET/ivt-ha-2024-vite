@@ -112,7 +112,6 @@ public class Game extends Canvas implements Runnable{
     }
     /*Ending the game, exittting*/
     public void endGame(){
-        System.out.println("Game Over");
         System.exit(1);
     }
 
@@ -123,13 +122,10 @@ public class Game extends Canvas implements Runnable{
             if(obj instanceof Place){
                 Asteroid a1 = (Asteroid) obj;
                 sunStorm.collisionWith(a1);
-                System.out.println("collisionWith(a1)");
             }
         }
     }
     public void determinePerihelion() {
-        System.out.println("determinePerihelion()");
-
         if(handler!=null){
             handler.checkAsteroids();
         }
@@ -137,7 +133,6 @@ public class Game extends Canvas implements Runnable{
     }
 
     private void tick() {
-        //System.out.println("Tick!");
         handler.tick();
     }
 
@@ -166,15 +161,11 @@ public class Game extends Canvas implements Runnable{
             menu.render(g);
         }
 
-
-
         g.dispose();
         bs.show();
     }
 
     public static void main(String args[]){
         Game game = new Game();
-
-        System.out.println("Hello");
     }
 }

@@ -58,31 +58,21 @@ public class Menu extends MouseAdapter{
         }else return false;
     }
 
-
-    public void tick() {
-
-    }
     public void render(Graphics g) {
-        //System.out.print("menu");
-        //g.drawImage(backImg,0,0, WIDTH/2, HEIGHT/2, null);
         g.drawImage(back, 0, 0, game.WIDTH, game.HEIGHT, null);
         g.drawImage(logo, 150, 50, 700, 200, null);
 
-        Font font = new Font("arial", 1, 40);
         Font font2 = new Font("arial", 1, 30);
 
 
         if(game.gameState==STATE.End) {
 
         }
-
         g.setColor(Color.white);
         g.setFont(font2);
 
         g.drawImage(play, 400, 350, 200, 80, null);
         g.drawImage(exit,400, 450, 200, 80, null);
-
-
 
     }
 }

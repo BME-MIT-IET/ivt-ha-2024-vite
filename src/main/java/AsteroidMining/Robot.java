@@ -43,6 +43,8 @@ public class Robot extends Visitor {
                 switch (randNum) {
                     case 0: travel(); break;
                     case 1: drill(); break;
+                    default:
+                        break;
                 }
             }
 
