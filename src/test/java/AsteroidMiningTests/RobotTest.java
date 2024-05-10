@@ -72,7 +72,7 @@ public class RobotTest {
 
     @Test
     public void testTickNoActionWhenDead() {
-        r.getDamage(100); // Assuming this makes the robot inactive or dead
+        r.getDamage(100);
         Robot spyRobot = Mockito.spy(r);
         spyRobot.tick();
         Mockito.verify(spyRobot, Mockito.never()).travel();
