@@ -1,11 +1,8 @@
 package AsteroidMiningTests;
 
 import AsteroidMining.*;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-
-import java.util.LinkedList;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class HandlerTest {
     SunStorm obj1 = new SunStorm(1,1,1);

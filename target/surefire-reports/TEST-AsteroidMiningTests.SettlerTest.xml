@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="AsteroidMiningTests.SettlerTest" time="0.407" tests="13" errors="1" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="AsteroidMiningTests.SettlerTest" time="0.381" tests="13" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="20"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-20\bin"/>
-    <property name="sun.java.command" value="C:\Users\PREDATOR\AppData\Local\Temp\surefire17287246784213020893\surefirebooter-20240510143600235_3.jar C:\Users\PREDATOR\AppData\Local\Temp\surefire17287246784213020893 2024-05-10T14-36-00_044-jvmRun1 surefire-20240510143600235_1tmp surefire_0-20240510143600235_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\PREDATOR\AppData\Local\Temp\surefire17650615073326764786\surefirebooter-20240510153507174_3.jar C:\Users\PREDATOR\AppData\Local\Temp\surefire17650615073326764786 2024-05-10T15-35-06_997-jvmRun1 surefire-20240510153507174_1tmp surefire_0-20240510153507174_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="D:\ivt_\ivt-ha-2024-vite\target\test-classes;D:\ivt_\ivt-ha-2024-vite\target\classes;C:\Users\PREDATOR\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\PREDATOR\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\PREDATOR\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\PREDATOR\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\PREDATOR\.m2\repository\org\mockito\mockito-core\5.10.0\mockito-core-5.10.0.jar;C:\Users\PREDATOR\.m2\repository\net\bytebuddy\byte-buddy\1.14.11\byte-buddy-1.14.11.jar;C:\Users\PREDATOR\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.11\byte-buddy-agent-1.14.11.jar;C:\Users\PREDATOR\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\PREDATOR\AppData\Local\Temp\surefire17287246784213020893\surefirebooter-20240510143600235_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\PREDATOR\AppData\Local\Temp\surefire17650615073326764786\surefirebooter-20240510153507174_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="20+36-2344"/>
@@ -58,7 +58,7 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="64.0"/>
   </properties>
-  <testcase name="testDrillOnFullyDrilled" classname="AsteroidMiningTests.SettlerTest" time="0.03"/>
+  <testcase name="testDrillOnFullyDrilled" classname="AsteroidMiningTests.SettlerTest" time="0.027"/>
   <testcase name="buildGateFail" classname="AsteroidMiningTests.SettlerTest" time="0.026">
     <system-out><![CDATA[countResource("iron”): nIron
 countResource("carbon”): nCarbon
@@ -66,19 +66,7 @@ countResource("uranium”): nUranium
 You do not have enough resources!
 ]]></system-out>
   </testcase>
-  <testcase name="buildGate" classname="AsteroidMiningTests.SettlerTest" time="0.045">
-    <error message="Index 0 out of bounds for length 0" type="java.lang.IndexOutOfBoundsException"><![CDATA[java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
-	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:100)
-	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:106)
-	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:302)
-	at java.base/java.util.Objects.checkIndex(Objects.java:385)
-	at java.base/java.util.ArrayList.get(ArrayList.java:427)
-	at AsteroidMining.Place.getNeighbour(Place.java:48)
-	at AsteroidMiningTests.SettlerTest.buildGate(SettlerTest.java:141)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-]]></error>
+  <testcase name="buildGate" classname="AsteroidMiningTests.SettlerTest" time="0.027">
     <system-out><![CDATA[countResource("iron”): nIron
 countResource("carbon”): nCarbon
 countResource("uranium”): nUranium
@@ -88,33 +76,21 @@ Second Gate Added- addGate()
 No place detected
 ]]></system-out>
   </testcase>
-  <testcase name="testFillSuccess" classname="AsteroidMiningTests.SettlerTest" time="0.033"/>
-  <testcase name="testDrill" classname="AsteroidMiningTests.SettlerTest" time="0.028"/>
-  <testcase name="testHideFail" classname="AsteroidMiningTests.SettlerTest" time="0.026"/>
+  <testcase name="testFillSuccess" classname="AsteroidMiningTests.SettlerTest" time="0.026"/>
+  <testcase name="testDrill" classname="AsteroidMiningTests.SettlerTest" time="0.024"/>
+  <testcase name="testHideFail" classname="AsteroidMiningTests.SettlerTest" time="0.027"/>
   <testcase name="testDrillWithNoAsteroid" classname="AsteroidMiningTests.SettlerTest" time="0.025"/>
   <testcase name="testMineFail" classname="AsteroidMiningTests.SettlerTest" time="0.023">
     <system-out><![CDATA[Asteroid is not fully drilled!
 ]]></system-out>
   </testcase>
-  <testcase name="buildRobot" classname="AsteroidMiningTests.SettlerTest" time="0.03">
-    <failure message="expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
-	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
-	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
-	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
-	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:31)
-	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:183)
-	at AsteroidMiningTests.SettlerTest.buildRobot(SettlerTest.java:112)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-]]></failure>
+  <testcase name="buildRobot" classname="AsteroidMiningTests.SettlerTest" time="0.026">
     <system-out><![CDATA[No place detected
 ]]></system-out>
   </testcase>
-  <testcase name="testFillFail" classname="AsteroidMiningTests.SettlerTest" time="0.024"/>
-  <testcase name="testMineOK" classname="AsteroidMiningTests.SettlerTest" time="0.035"/>
-  <testcase name="testHideSuccess" classname="AsteroidMiningTests.SettlerTest" time="0.032"/>
+  <testcase name="testFillFail" classname="AsteroidMiningTests.SettlerTest" time="0.036"/>
+  <testcase name="testMineOK" classname="AsteroidMiningTests.SettlerTest" time="0.037"/>
+  <testcase name="testHideSuccess" classname="AsteroidMiningTests.SettlerTest" time="0.031"/>
   <testcase name="buildRobotFail" classname="AsteroidMiningTests.SettlerTest" time="0.031">
     <system-out><![CDATA[countResource("iron”): nIron
 countResource("carbon”): nCarbon

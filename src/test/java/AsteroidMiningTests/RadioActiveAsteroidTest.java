@@ -2,11 +2,10 @@ package AsteroidMiningTests;
 
 import AsteroidMining.RadioActiveAsteroid;
 import AsteroidMining.Resource;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
-import static org.mockito.Mockito.*;
-import static org.junit.jupiter.api.Assertions.*;
 
 class RadioActiveAsteroidTest {
     private RadioActiveAsteroid asteroid;
@@ -21,7 +20,7 @@ class RadioActiveAsteroidTest {
 
     @Test
     void testConstructor() {
-        assertNotNull(asteroid, "Asteroid should be instantiated");
+        Assertions.assertNotNull(asteroid, "Asteroid should be instantiated");
     }
 
     @Test
@@ -38,6 +37,6 @@ class RadioActiveAsteroidTest {
         deepAsteroid.explode();
 
         // Verify no interaction or state change happens with resource or asteroid when depth is not zero
-        verifyNoInteractions(mockResource);
+        Mockito.verifyNoInteractions(mockResource);
     }
 }

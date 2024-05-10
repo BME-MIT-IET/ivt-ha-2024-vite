@@ -3,9 +3,9 @@ package AsteroidMiningTests;
 import AsteroidMining.Asteroid;
 import AsteroidMining.Carbon;
 import AsteroidMining.Robot;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
-import static org.junit.jupiter.api.Assertions.*;
 
 public class RobotTest {
 
