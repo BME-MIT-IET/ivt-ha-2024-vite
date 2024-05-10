@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: AsteroidMiningTests.AsteroidTest
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.242 s -- in AsteroidMiningTests.AsteroidTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.241 s -- in AsteroidMiningTests.AsteroidTest

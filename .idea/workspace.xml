@@ -5,16 +5,44 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c59b9d44-2dc1-4ebd-bb6a-45904f5bf5e2" name="Changes" comment="workspace.xml removed">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Asteroid-Mining.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/java/AsteroidMiningTests/CarbonTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/java/AsteroidMiningTests/DirectionTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/java/AsteroidMiningTests/IDTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/java/AsteroidMiningTests/IronTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/java/AsteroidMiningTests/RadioActiveAsteroidTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/java/AsteroidMiningTests/WaterIceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AsteroidMiningTests/CarbonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AsteroidMiningTests/CarbonTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AsteroidMiningTests/DirectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AsteroidMiningTests/DirectionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AsteroidMiningTests/IDTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AsteroidMiningTests/IDTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AsteroidMiningTests/RadioActiveAsteroidTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AsteroidMiningTests/RadioActiveAsteroidTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/AsteroidMiningTest/AsteroidTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AsteroidMiningTests/AsteroidTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/AsteroidMiningTest/CarbonTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/AsteroidMiningTest/DirectionTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/AsteroidMiningTest/HandlerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AsteroidMiningTests/HandlerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/AsteroidMiningTest/IDTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/AsteroidMiningTest/RadioActiveAsteroidTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/AsteroidMiningTest/RobotTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AsteroidMiningTests/RobotTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/AsteroidMiningTest/SettlerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AsteroidMiningTests/SettlerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/AsteroidMiningTests.AsteroidTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/AsteroidMiningTests.AsteroidTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/AsteroidMiningTests.CarbonTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/AsteroidMiningTests.CarbonTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/AsteroidMiningTests.DirectionTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/AsteroidMiningTests.DirectionTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/AsteroidMiningTests.HandlerTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/AsteroidMiningTests.HandlerTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/AsteroidMiningTests.IDTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/AsteroidMiningTests.IDTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/AsteroidMiningTests.IronTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/AsteroidMiningTests.IronTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/AsteroidMiningTests.RadioActiveAsteroidTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/AsteroidMiningTests.RadioActiveAsteroidTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/AsteroidMiningTests.RobotTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/AsteroidMiningTests.RobotTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/AsteroidMiningTests.SettlerTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/AsteroidMiningTests.SettlerTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/AsteroidMiningTests.WaterIceTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/AsteroidMiningTests.WaterIceTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-AsteroidMiningTests.AsteroidTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-AsteroidMiningTests.AsteroidTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-AsteroidMiningTests.CarbonTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-AsteroidMiningTests.CarbonTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-AsteroidMiningTests.DirectionTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-AsteroidMiningTests.DirectionTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-AsteroidMiningTests.HandlerTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-AsteroidMiningTests.HandlerTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-AsteroidMiningTests.IDTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-AsteroidMiningTests.IDTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-AsteroidMiningTests.IronTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-AsteroidMiningTests.IronTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-AsteroidMiningTests.RadioActiveAsteroidTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-AsteroidMiningTests.RadioActiveAsteroidTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-AsteroidMiningTests.RobotTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-AsteroidMiningTests.RobotTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-AsteroidMiningTests.SettlerTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-AsteroidMiningTests.SettlerTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-AsteroidMiningTests.WaterIceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-AsteroidMiningTests.WaterIceTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/AsteroidMiningTests/CarbonTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/AsteroidMiningTests/CarbonTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/AsteroidMiningTests/RadioActiveAsteroidTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/AsteroidMiningTests/RadioActiveAsteroidTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,21 +59,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "ruvejdagjyrevci"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;ruvejdagjyrevci&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubDefaultAccount">
     <option name="defaultAccountId" value="6cdd2916-f02f-4115-8909-d22c853ac8f9" />
   </component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/BME-MIT-IET/ivt-ha-2024-vite.git",
-    "accountId": "b77381b6-b984-4518-b080-198773f1a5c1"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/BME-MIT-IET/ivt-ha-2024-vite.git&quot;,
+    &quot;accountId&quot;: &quot;b77381b6-b984-4518-b080-198773f1a5c1&quot;
   }
-}]]></component>
+}</component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -77,7 +105,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "JUnit-Tests",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Program Files/Java/hamcrest-core-1.3.jar",
+    "last_directory_selection": "D:/ivt_/ivt-ha-2024-vite/src/test/java",
+    "last_opened_file_path": "D:/ivt_/ivt-ha-2024-vite/src/test/java/AsteroidMiningTests",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -92,6 +121,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\ivt_\ivt-ha-2024-vite\src\test\java\AsteroidMiningTests" />
       <recent name="D:\ivt_\ivt-ha-2024-vite\src\main\java" />
     </key>
   </component>
