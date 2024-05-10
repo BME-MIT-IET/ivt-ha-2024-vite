@@ -1,6 +1,7 @@
 package AsteroidMining;
 
 import java.awt.*;
+import java.io.IOException;
 
 public class Robot extends Visitor {
 
@@ -54,7 +55,7 @@ public class Robot extends Visitor {
     }
 
     @Override
-    public void render(Graphics g) {
+    public void render(Graphics g) throws IOException {
 
     }
 
