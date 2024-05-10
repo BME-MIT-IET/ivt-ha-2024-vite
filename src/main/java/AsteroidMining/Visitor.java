@@ -31,24 +31,14 @@ public abstract class Visitor extends GameObject {
     public abstract void render(Graphics g) throws IOException;
 
     public void travel(){
-        System.out.println("travel()");
-
-        if(place.equals(null))
-            System.out.println("null");
-
-        System.out.println(place);
-        System.out.println(handler.neighbours);
         place.removeVisitor(this);
         handler.neighbours.remove(place);
         handler.neighbours.add(place);
         handler.neighbours.get(0).addVisitor(this);
         System.out.println(place);
-        System.out.println("Travelling to the Neighbouring asteroid..");
-
 
     }
     public boolean drill(){
-        System.out.println("Drilling!");
         Asteroid a1 = (Asteroid) this.getPlace();
         if(a1==null) return false;
         if(a1.depth>=0) {
@@ -79,7 +69,7 @@ public abstract class Visitor extends GameObject {
 
         Asteroid a1 = (Asteroid) this.getPlace();
         if(a1!=null && a1.isHollow()){
-            hidden = true; System.out.println("hide");
+            hidden = true;
             return true;
         }
         return false;

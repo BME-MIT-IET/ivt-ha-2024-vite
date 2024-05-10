@@ -17,15 +17,15 @@ public abstract class Place extends GameObject {
         super(id);
     }
 
+    @Override
     public abstract void tick();
+    @Override
     public abstract void render(Graphics g);
 
     public void addVisitor(Visitor v){
-        System.out.println("addVisitor(Visitor v)");
         v.setPlace(this);
         visitors.add(v);
         //this.visitor.setPlace(this);
-        System.out.println("Visitor landed successfully!");
     }
     //public Visitor getVisitor(){return this.visitor;}
     /*Removing Visitor to the place*/

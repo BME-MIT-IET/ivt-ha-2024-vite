@@ -5,7 +5,6 @@ import java.awt.*;
 public class SunStorm extends GameObject {
     private int time;
 
-
     public SunStorm(int x, int y, int time) {
 
         super(x, y, ID.SunStorm);
