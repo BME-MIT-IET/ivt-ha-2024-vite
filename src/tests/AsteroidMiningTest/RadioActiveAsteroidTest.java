@@ -21,7 +21,7 @@ class RadioActiveAsteroidTest {
 
     @Test
     void testConstructor() {
-        assertNotNull(asteroid, "Asteroid should be instantiated");
+        Assertions.assertNotNull(asteroid, "Asteroid should be instantiated");
     }
 
     @Test
@@ -38,6 +38,6 @@ class RadioActiveAsteroidTest {
         deepAsteroid.explode();
 
         // Verify no interaction or state change happens with resource or asteroid when depth is not zero
-        verifyNoInteractions(mockResource);
+        Mockito.verifyNoInteractions(mockResource);
     }
 }

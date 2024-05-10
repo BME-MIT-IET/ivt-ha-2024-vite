@@ -25,28 +25,28 @@ public class RobotTest {
     public void testHideSuccess(){
         r.setPlace(a2);
         a2.removeResource();
-        assertTrue(a2.isHollow());
+        Assertions.assertTrue(a2.isHollow());
         r.hide();
-        assertTrue(r.isHidden());
+        Assertions.assertTrue(r.isHidden());
     }
 
     @Test
     public void testHideNoSuccess(){
         r.setPlace(a1);
-        assertFalse(a1.isHollow());
+        Assertions.assertFalse(a1.isHollow());
         r.hide();
-        assertFalse(r.isHidden());
+        Assertions.assertFalse(r.isHidden());
     }
 
     @Test
     public void testDrill() {
         r.setPlace(a1);
-        assertTrue(r.drill());
+        Assertions.assertTrue(r.drill());
     }
 
 
     @Test
     public void testDrillWithNoAsteroid() {
-        assertFalse(r.drill());
+        Assertions.assertFalse(r.drill());
     }
 }

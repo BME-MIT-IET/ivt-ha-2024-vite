@@ -34,8 +34,8 @@ class AsteroidTest {
 
         asteroid.addResource(iron);
 
-        assertEquals(iron, asteroid.getResource());
-        assertFalse(asteroid.isHollow());
+        Assertions.assertEquals(iron, asteroid.getResource());
+        Assertions.assertFalse(asteroid.isHollow());
     }
 
     @Test
@@ -44,7 +44,7 @@ class AsteroidTest {
 
         asteroid.addResource(uranium);
 
-        assertEquals(uranium, asteroid.getResource());
+        Assertions.assertEquals(uranium, asteroid.getResource());
         //Failed test: ID is not set to RadioactiveAsteroid after addResource(uranium) invoked
         //assertEquals(ID.RadioActiveAsteroid, asteroid.getId());
     }
@@ -56,8 +56,8 @@ class AsteroidTest {
 
         asteroid.removeResource();
 
-        assertNull(asteroid.getResource());
-        assertTrue(asteroid.isHollow());
+        Assertions.assertNull(asteroid.getResource());
+        Assertions.assertTrue(asteroid.isHollow());
     }
 
     @Test
@@ -65,8 +65,8 @@ class AsteroidTest {
         Asteroid fullyDrilledAsteroid = new Asteroid(0, 0, new Carbon(), 0);
         Asteroid partiallyDrilledAsteroid = new Asteroid(0, 0, new Carbon(), 5);
 
-        assertTrue(fullyDrilledAsteroid.isFullyDrilled());
-        assertFalse(partiallyDrilledAsteroid.isFullyDrilled());
+        Assertions.assertTrue(fullyDrilledAsteroid.isFullyDrilled());
+        Assertions.assertFalse(partiallyDrilledAsteroid.isFullyDrilled());
     }
 
     @Test
@@ -75,7 +75,7 @@ class AsteroidTest {
         asteroid.addVisitor(settler);
 
         asteroid.explode(true);
-        assertFalse(settler.isAlive());
+        Assertions.assertFalse(settler.isAlive());
     }
 
 
@@ -88,7 +88,7 @@ class AsteroidTest {
         boolean exploded = true;
 
         drilledAsteroid.inPerihelion(exploded);
-        assertEquals(ID.RadioActiveAsteroid, drilledAsteroid.getId() );
+        Assertions.assertEquals(ID.RadioActiveAsteroid, drilledAsteroid.getId() );
     }
 
     @Test
@@ -97,6 +97,6 @@ class AsteroidTest {
         boolean exploded = false;
 
         drilledAsteroid.inPerihelion(exploded);
-        assertNull(asteroid.getResource());
+        Assertions.assertNull(asteroid.getResource());
     }
 }

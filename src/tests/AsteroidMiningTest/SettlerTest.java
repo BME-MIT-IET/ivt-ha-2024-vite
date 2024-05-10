@@ -29,17 +29,17 @@ public class SettlerTest {
     public void testHideSuccess(){
         s.setPlace(a2);
         a2.removeResource();
-        assertTrue(a2.isHollow());
+        Assertions.assertTrue(a2.isHollow());
         s.hide();
-        assertTrue(s.isHidden());
+        Assertions.assertTrue(s.isHidden());
     }
 
     @Test
     public void testHideFail(){
         s.setPlace(a1);
-        assertFalse(a1.isHollow());
+        Assertions.assertFalse(a1.isHollow());
         s.hide();
-        assertFalse(s.isHidden());
+        Assertions.assertFalse(s.isHidden());
     }
 
     @Test
@@ -47,7 +47,7 @@ public class SettlerTest {
         s.setPlace(a2);
         s.drill();
         s.mine();
-        assertTrue(s.fillAsteroid());
+        Assertions.assertTrue(s.fillAsteroid());
     }
 
     @Test
@@ -55,32 +55,32 @@ public class SettlerTest {
         s.setPlace(a1);
         s.drill();
         s.mine();
-        assertFalse(s.fillAsteroid());
+        Assertions.assertFalse(s.fillAsteroid());
     }
 
     @Test
     public void testDrill() {
         s.setPlace(a1);
-        assertTrue(s.drill());
+        Assertions.assertTrue(s.drill());
     }
 
     @Test
     public void testDrillOnFullyDrilled() {
         s.setPlace(a2);
         //so it says it is not fully drilled even when depth is 0
-        assertTrue(s.drill());
+        Assertions.assertTrue(s.drill());
     }
 
     @Test
     public void testDrillWithNoAsteroid() {
-        assertFalse(s.drill());
+        Assertions.assertFalse(s.drill());
     }
 
     @Test
     public void testMineOK() {
         s.setPlace(a1);
         s.drill();
-        assertTrue(s.mine());
+        Assertions.assertTrue(s.mine());
     }
 
     @Test
@@ -88,7 +88,7 @@ public class SettlerTest {
         s.setPlace(a1);
         a1.removeResource();
         s.drill();
-        assertFalse(s.mine());
+        Assertions.assertFalse(s.mine());
     }
 
 
@@ -109,13 +109,13 @@ public class SettlerTest {
         s.setPlace(a4);
         s.mine();
 
-        assertTrue(s.buildRobot());
-        assertFalse(a4.getVisitors().contains(Robot.class));
+        Assertions.assertTrue(s.buildRobot());
+        Assertions.assertFalse(a4.getVisitors().contains(Robot.class));
     }
 
     @Test
     public void buildRobotFail() {
-        assertFalse(s.buildRobot());
+        Assertions.assertFalse(s.buildRobot());
     }
 
     @Test
@@ -135,14 +135,14 @@ public class SettlerTest {
         s.setPlace(a3);
         s.mine();
 
-        assertTrue(s.buildTeleportationGates());
+        Assertions.assertTrue(s.buildTeleportationGates());
         s.deployGate();
 
-        assertEquals(a3.getNeighbour().getClass(), TeleportationGate.class);
+        Assertions.assertEquals(a3.getNeighbour().getClass(), TeleportationGate.class);
     }
 
     @Test
     public void buildGateFail() {
-        assertFalse(s.buildTeleportationGates());
+        Assertions.assertFalse(s.buildTeleportationGates());
     }
 }

@@ -16,8 +16,8 @@ class HandlerTest {
         Handler h = new Handler();
 
         h.addObject(obj1);
-        assertEquals(h.objects.contains(obj1),true);
-        assertEquals(h.objects.getFirst().getId(),obj1.getId());
+        Assertions.assertEquals(h.objects.contains(obj1),true);
+        Assertions.assertEquals(h.objects.getFirst().getId(),obj1.getId());
     }
 
     @Test
@@ -27,10 +27,10 @@ class HandlerTest {
         h.addObject(obj1);
         h.addObject(obj2);
 
-        assertEquals(h.objects.contains(obj1),true);
+        Assertions.assertEquals(h.objects.contains(obj1),true);
         h.removeObject(obj1);
 
-        assertEquals(h.objects.contains(obj1),false);
+        Assertions.assertEquals(h.objects.contains(obj1),false);
     }
 
     @Test
@@ -45,6 +45,6 @@ class HandlerTest {
         h.addObject(obj3);
         h.checkAsteroids();
 
-        assertEquals(h.objects.contains(obj3),true);
+        Assertions.assertEquals(h.objects.contains(obj3),true);
     }
 }
