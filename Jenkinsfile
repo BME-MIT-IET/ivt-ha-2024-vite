@@ -12,8 +12,11 @@ pipeline {
             steps {
                 
                 bat "mvn test"
+                
                 // Generate Surefire test reports
                 bat "mvn surefire-report:report"
+
+                bat "mvn verify"
             }
         }
     }
