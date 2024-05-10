@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c59b9d44-2dc1-4ebd-bb6a-45904f5bf5e2" name="Changes" comment="workspace.xml removed">
-      <change afterPath="$PROJECT_DIR$/src/test/java/AsteroidMiningTests/SunStormTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AsteroidMiningTests/ResourceTest" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,10 +71,10 @@
     "Maven.Asteroid-Mining [clean,install].executor": "Run",
     "Maven.Asteroid-Mining [exec:java].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "JUnit-Tests-2",
+    "git-widget-placeholder": "Code-Coverage-Measurement-2",
     "kotlin-language-version-configured": "true",
     "last_directory_selection": "D:/ivt_/ivt-ha-2024-vite/src/test/java",
-    "last_opened_file_path": "D:/ivt_/ivt-ha-2024-vite/src/test/java/AsteroidMiningTests",
+    "last_opened_file_path": "C:/Users/ruvej/Desktop/4th BSc Year/8th Semester/Integration and Verification Techniques/HOMEWORK/ivt-ha-2024-vite",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -129,6 +130,7 @@
       <workItem from="1715300715969" duration="434000" />
       <workItem from="1715367086621" duration="1233000" />
       <workItem from="1715372473236" duration="105000" />
+      <workItem from="1715373928518" duration="46000" />
     </task>
     <task id="LOCAL-00001" summary="maven framework build added">
       <option name="closed" value="true" />
