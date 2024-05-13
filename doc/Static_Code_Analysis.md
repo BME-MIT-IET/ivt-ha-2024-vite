@@ -64,6 +64,15 @@ After running PMD analysis, review the generated reports to identify code qualit
 
 ![pmd.png](images/pmd.png)
 
+### More detailed solutions
+![img.png](img.png)
+
+**Initial PMD analysis:**
+![img_1.png](img_1.png)
+
+**After addressing the violations and fixing the code smells:**
+![img_2.png](img_2.png)
+
 ### Summary
 By utilizing the PMD Maven plugin in our project, we could be able to incorporate static code analysis into our Maven build process.
 This enabled us to identify and address code quality issues during the development cycle.
