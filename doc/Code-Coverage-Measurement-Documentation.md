@@ -52,7 +52,7 @@ Here's a step-by-step overview of how JaCoCo integrates with Maven to produce co
 
 Initially, the code coverage results revealed a coverage of just 37%. This low percentage was concerning as it indicated that a significant portion of the codebase lacked sufficient testing, leaving many functionalities potentially prone to errors and bugs. 
 
-![](Coverage1.png)
+![](images/Coverage1.png)
 
 #
 # 3 Extending the Test Suite
@@ -84,5 +84,5 @@ Following the comprehensive extension of the test suite, where new JUnit tests w
 
 The efforts to enhance the test suite paid off significantly: the code coverage improved dramatically from the initial 37% to an impressive 75%. This marked improvement was not only a testament to the team's dedicated effort in addressing the previously identified gaps in testing but also significantly improved the overall quality and robustness of the application.
 
-![](Coverage2.png)
+![](images/Coverage2.png)
 #
